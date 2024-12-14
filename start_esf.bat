@@ -1,0 +1,1 @@
+hl.exe -game esf -num_edicts 2048 -console
