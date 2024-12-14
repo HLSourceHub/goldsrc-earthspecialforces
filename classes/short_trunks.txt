@@ -1,0 +1,28 @@
+* Normal Form *
+Trunks -
+Starting PowerLevel: 650,000
+Max Health: 110
+Max Speed: 180
+
+ATTACKS - 
+Melee (sword gibs when at 20%, can't be blocked)
+Ki Blast
+Generic Beam
+Burning Attack
+Sensu Beans
+
+* Transformation *
+SSJ Trunks -
+Transform Powerlevel: 1,000,000
+Perfect Transform Powerlevel: 3,000,000
+Powerlevel Multiplier: 2
+Max Health: 130
+Max Speed: 250
+
+ATTACKS - 
+Melee
+Ki Blast
+Generic Beam
+Burning Attack
+Finishing Buster
+Sensu Beans

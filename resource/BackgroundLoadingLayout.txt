@@ -1,0 +1,11 @@
+resolution	640	480
+
+resource/background/640_splash_lu.tga		scaled		0	0
+resource/background/640_splash_ld.tga		scaled		0	256
+resource/background/640_splash_mu.tga		scaled		256	0
+resource/background/640_splash_md.tga		scaled		256	256
+resource/background/640_splash_ru.tga		scaled		512	0
+resource/background/640_splash_rd.tga		scaled		512	256
+
+
+

@@ -1,0 +1,13 @@
+global
+{
+	ZOOM	1.00
+	ORIGIN	0	0	1
+	ROTATED	0
+}
+
+layer
+{
+	IMAGE "overviews/esf_gero.tga"
+	HEIGHT	1
+}
+

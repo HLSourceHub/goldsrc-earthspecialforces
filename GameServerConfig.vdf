@@ -1,0 +1,154 @@
+// TFC DEDICATED SERVER CONFIGURATION SPECIFICATION FOR GUI
+"GameServerConfig"
+{
+	"mp_gamemode"
+	{
+		"name" "Game mode"
+		"type" "enumeration"
+		"list"
+		{
+			"0" "Free fighting"
+			"1" "Team mode"
+			"2" "CTDB [experimental]"
+		}		
+	}
+	
+	"mp_realteams"
+	{
+		"name" "Real good/evil teams"
+		"type" "enumeration" 
+		"list"
+		{	
+		  "0" Disabled
+		  "1" Enabled
+		}
+	}
+
+  "mp_timelimit"
+	{
+		"name"	"Time limit"
+		"type"	"string"
+	}
+	
+	"mp_fraglimit"
+	{
+		"name" "Frag limit"
+		"type" "string"
+	}
+	
+	"mp_wishlimit"
+	{
+		"name" "Wish limit"
+		"type" "string"		
+	}
+	
+	"mp_footsteps"
+	{
+		"name" "Footsteps"
+		"type" "enumeration"
+		"list"
+		{
+			"0" "Disabled"
+			"1"	"Enabled"
+		}
+	}
+	
+	"mp_friendlyfire"
+	{
+		"name" "Friendly Fire"
+		"type" "enumeration"
+		"list"
+		{
+		  "0" "Disabled" 
+		  "1" "Enabled"
+		} 
+	}
+
+	"mp_allowspectator"
+	{
+		"name" "Allow spectator"
+		"type" "enumeration"
+		"list"
+		{
+		  "0" "Disabled" 
+		  "1" "Enabled"
+		}
+	}
+
+	"mp_plcatchup"
+	{
+		"name" "Get Powerlevel closer to the servers average on dead"
+		"type" "enumeration"
+		"list"
+		{
+		  "0" "Disabled" 
+		  "1" "Enabled"
+		}
+	}
+
+	"mp_multipleps"
+	{
+		"name" "Multiple ps'ing in free fighting mode"
+		"type" "enumeration"
+		"list"
+		{
+		  "0" "Disabled" 
+		  "1" "Enabled"
+		}
+	}
+
+	"mp_forcerespawn"
+	{
+		"name" "Force Respawn"
+		"type" "enumeration"
+		"list"
+		{
+		  "0" "Disabled" 
+		  "1" "Enabled"
+		}
+	}
+
+	"mp_lockmodels"
+	{
+		"name" "Lock models"
+		"type" "enumeration"
+		"list"
+		{
+		  "0" "Disabled" 
+		  "1" "Enabled"
+		}
+	}
+
+	"mp_spawn_invulnerable_time"
+	{
+		"name" "Invulnerable time after spawning"
+		"type" "string"		
+	}
+
+	"mp_characterlimit"
+	{
+		"name" "Class limit"
+		"type" "string"
+	}	
+
+	"sv_botskill"
+	{
+		"name" "Default Bot Skill"
+		"type" "enumeration"
+		"list"
+		{
+		  "0" "Best" 
+		  "1" "High"
+		  "1" "Medium"
+		  "1" "Weak"
+		  "1" "Bad"
+		}
+	}
+
+	"sv_numbots"
+	{
+		"name" "Number of Bots"
+		"type" "string"
+	}	
+
+}

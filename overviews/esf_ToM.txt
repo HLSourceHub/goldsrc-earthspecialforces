@@ -1,0 +1,14 @@
+// overview description file for esf_ToM.bsp
+
+global 
+{
+	ZOOM		1.00
+	ORIGIN	0.00 	0.00	-767.50
+	ROTATED	1
+}
+
+layer 
+{
+	IMAGE	"overviews/esf_ToM.tga"
+	HEIGHT	-2561.00
+}

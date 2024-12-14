@@ -1,0 +1,151 @@
+121
+
+number_0		320 320hud2	  0	  0	  9   12
+number_1		320 320hud2	  9	  0	  9   12
+number_2		320 320hud2	  18	0	  9	  12
+number_3		320 320hud2	  27	0	  9	  12
+number_4		320 320hud2	  36	0	  9	  12
+number_5		320 320hud2	  45	0	  9	  12
+number_6		320 320hud2	  54	0	  9	  12
+number_7		320 320hud2	  63	0	  9   12
+number_8		320 320hud2	  72	0	  9	  12
+number_9		320 320hud2	  81	0	  9	  12
+comma				320 320comma	 	3	2	  3	  14
+
+beanbar						320 320beanbar	0	0	16	16
+scoutermetalmode1	320 320scoutermetalmode1 0	0	128	64
+scoutermetalmode2	320 320scoutermetalmode2 0	0	128	64
+scoutermetalmode3	320 320scoutermetalmode3 0	0	128	64
+radarglass				320 320radarglass	0	0	128	64
+scouterglass			320 320scouterglass	0	0	128	64
+dot1			320 320dot1	0	0	1	1
+dot2			320 320dot2	0	0	2	2
+dot3			320 320dot3	0	0	3	3
+dot4			320 320dot4	0	0	4	4
+dragonballdot		320 320dot3	0	0	3	3
+radarcenter		320 320radarcenter	0	0	3	3
+
+//hud
+mainbar			320 320mainbar		0	0	120	16
+chargeline		320 320chargeline	0	0	  8	16
+chargering		320 320chargering	0	0	  8	16
+powerstruggle		320 320powerstruggle	0	0	 16    128
+healthline		320 320healthline	0	0	  8	16
+kiline			320 320kiline		0	0	  8	16
+transformline		320 320transformline	0	0	  8	16
+psline			320 320psline		0	0	 16	 8
+kifront			320 320kifront		0	0	 16	16
+lffront			320 320lffront		0	0	 16	16
+cffront			320 320cffront		0	0	 16	16
+transformbar		320 320transformbar 	0	0	 56	16
+// melee
+greenbar		320 greenbar		0	0	116	12
+bluebar			320 bluebar		0	0	116	12
+redbar			320 redbar		0	0	116	12
+greybar			320 greybar		0	0	116	12
+arrows			320 320arrows		0	0	64	64
+blocks			320 320block		0	0	128	64
+blocku			320 320blocku		0	0	32	16
+
+buu			320 320buu	0	0	16	32
+cell			320 320cell	0	0	16	32
+frieza			320 320frieza	0	0	16	32
+goku			320 320goku	0	0	16	32	
+gohan			320 320gohan	0	0	16	32
+krillin			320 320krillin	0	0	16	32
+piccolo			320 320piccolo	0	0	16	32
+trunks			320 320trunks	0	0	16	32
+vegeta			320 320vegeta	0	0	16	32
+
+title_half		320 320hud3 0	48	128	16
+title_life		320 320hud3 128 48	116	16
+meleetarget    		320 target	0	0	64	64
+//===========================================
+
+number_0		640 640hud7	0	0	15	18
+number_1		640 640hud7	15	0	15	18
+number_2		640 640hud7	30	0	15	18
+number_3		640 640hud7	45	0	15	18
+number_4		640 640hud7	60	0	15	18
+number_5		640 640hud7	75	0	15	18
+number_6		640 640hud7	90	0	15	18
+number_7		640 640hud7	105	0	15	18
+number_8		640 640hud7	120	0	15	18
+number_9		640 640hud7	135	0	15	18
+comma			640 640comma	  4	0	 8	20
+
+beanbar			640 640beanbar	0	0	40	32
+scoutermetalmode1	640 640scoutermetalmode1	0	0	256	128
+scoutermetalmode2	640 640scoutermetalmode2	0	0	256	128
+scoutermetalmode3	640 640scoutermetalmode3	0	0	256	128
+scouterglass		640 640scouterglass	0	0	256	128
+radarglass		640 640radarglass	0	0	256	128
+dot1			640 640dot1	0	0	1	1
+dot2			640 640dot2	0	0	2	2
+dot3			640 640dot3	0	0	3	3
+dot4			640 640dot4	0	0	4	4
+dot5			640 640dot5	0	0	5	5
+dot6			640 640dot6	0	0	6	6
+dot7			640 640dot7	0	0	7	7
+dragonballdot		640 640dot5	0	0	5	5
+radarcenter		640 640radarcenter	0	0	5	5
+transformbar		640 640transformbar 0	0	96	32
+
+//hud
+mainbar			640 640mainbar		0	0	232	32
+chargeline		640 640chargeline	0	0	  8	32
+chargering		640 640chargering	0	0	  8	32
+powerstruggle		640 640powerstruggle	0	0	 32    256
+healthline		640 640healthline	0	0	  8	32
+kiline			640 640kiline		0	0	  8	32
+transformline		640 640transformline	0	0	  8	32
+psline			640 640psline		0	0	 32	 8
+kifront			640 640kifront		0	0	 32	32
+lffront			640 640lffront		0	0	 32	32
+cffront			640 640cffront		0	0	 32	32
+
+// melee
+greenbar		640 greenbar		0	0	224	24
+bluebar			640 bluebar		0	0	224	24
+redbar			640 redbar		0	0	224	24
+greybar			640 greybar		0	0	224	24
+arrows			640 640arrows		0	0	128	128
+blocks			640 640block		0	0	256	128
+blocku			640 640blocku		0	0	64	32	
+
+// melee text
+//melee_0			640 640meleetext	0	0	 11	22
+//melee_1			640 640meleetext	12	0	 10	22
+//melee_2			640 640meleetext	22	0	 12	22
+//melee_3			640 640meleetext	34	0	 12	22
+//melee_4			640 640meleetext	46	0	 14	22
+//melee_5			640 640meleetext	59	0	 13	22
+//melee_6			640 640meleetext	71	0	 12	22
+//melee_7			640 640meleetext	83	0	 13	22
+//melee_8			640 640meleetext	96	0	 13	22
+//melee_9			640 640meleetext	109	0	 13	22
+//melee_hit		640 640meleetext	0	21	 38	22
+//melee_hits		640 640meleetext	0	42	 50	22
+//melee_combo		640 640meleetext	0	63	 67	22
+//melee_damage		640 640meleetext	0	84	 74	22
+//melee_critical		640 640meleetext	0	105	 80	22
+//melee_damageper		640 640meleetext	0	126	 97	22
+//melee_lowki		640 640meleetext	0	147	 61	22
+//melee_lowhp		640 640meleetext	0	168	110	22
+//melee_deepshit		640 640meleetext	0	189	168	22
+//melee_dodged		640 640meleetext	0	210	78	22
+
+buu			640 640buu	0	0	32	64
+cell			640 640cell	0	0	32	64
+frieza			640 640frieza	0	0	32	64
+goku			640 640goku	0	0	32	64	
+gohan			640 640gohan	0	0	32	64
+krillin			640 640krillin	0	0	32	64
+piccolo			640 640piccolo	0	0	32	64
+trunks			640 640trunks	0	0	32	64
+vegeta			640 640vegeta	0	0	32	64
+
+meleetarget     	640 target	0	0	64	64
+
+title_half		640 640hud4	0	226	256	30
+title_life		640 640hud5	0	226	220	30

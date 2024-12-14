@@ -1,0 +1,28 @@
+* Normal Form *
+Fat Buu -
+Starting PowerLevel: 1,250,000
+Max Health: 160
+Max Speed: 220
+
+ATTACKS - 
+Melee
+Ki Blast
+Generic Beam
+Candy Attack
+Mouth Blast
+Regeneration
+
+* Transformation *
+Evil Buu - 
+Transform Powerlevel: 3,000,000
+Powerlevel Multiplier: 1.5
+Max Health: 180
+Max Speed: 320
+
+ATTACKS - 
+Melee
+Ki Blast
+Generic Beam
+Candy Attack
+Mouth Blast
+Regeneration

@@ -1,0 +1,31 @@
+* Normal Form *
+Piccolo -
+Starting PowerLevel: 650,000
+Max Health: 120
+Max Speed: 180
+
+ATTACKS - 
+Melee
+Ki Blast
+Generic Beam
+Eye Laser
+Special Beam Cannon
+Masenko
+Sensu Beans
+
+* Transformation *
+Powered Up Piccolo -
+Transform Powerlevel: 1,650,000
+Perfect Transform Powerlevel: 3,975,000
+Powerlevel Multiplier: 1.5
+Max Health: 140
+Max Speed: 250
+
+ATTACKS - 
+Melee
+Ki Blast
+Generic Beam
+Eye Laser
+Special Beam Cannon
+Masenko
+Sensu Beans

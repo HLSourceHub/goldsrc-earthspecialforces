@@ -1,0 +1,30 @@
+* Normal Form *
+Gohan -
+Starting PowerLevel: 600,000
+Max Health: 100
+Max Speed: 180
+
+ATTACKS - 
+Melee
+Ki Blast
+Generic Beam
+Shield Attack
+Power Beam
+Sensu Beans
+
+* Transformation *
+SSJ Gohan -
+Transform Powerlevel: 1,000,000
+Perfect Transform Powerlevel: 3,500,000
+Powerlevel Multiplier: 2
+Max Health: 120
+Max Speed: 280
+
+ATTACKS - 
+Melee
+Ki Blast
+Generic Beam
+Shield Attack
+Kamehameha
+Power Beam
+Sensu Beans

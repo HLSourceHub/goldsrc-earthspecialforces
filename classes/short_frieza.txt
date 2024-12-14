@@ -1,0 +1,32 @@
+* Normal Form *
+Frieza -
+Starting PowerLevel: 800,000
+Max Health: 150
+Max Speed: 180
+
+ATTACKS - 
+Melee
+Ki Blast
+Generic Beam
+Frieza Disk
+Finger Laser
+Telekinesis
+Sensu Beans
+
+* Transformation *
+Frieza Form 2 - 
+Transform Powerlevel: 1,800,000
+Perfect Transform Powerlevel: 2,500,000
+Powerlevel Multiplier: 1.5
+Max Health: 170
+Max Speed: 275
+
+ATTACKS - 
+Melee
+Ki Blast
+Generic Beam
+Frieza Disk
+Finger Laser
+Death Ball
+Telekinesis
+Sensu Beans

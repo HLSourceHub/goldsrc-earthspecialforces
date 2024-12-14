@@ -1,0 +1,32 @@
+* Normal Form *
+Imperfect Cell -
+Starting PowerLevel: 900,000
+Max Health: 120
+Max Speed: 220
+
+ATTACKS - 
+Melee
+Ki Blast
+Generic Beam
+Frieza Disk
+Kamehameha
+Special Beam Cannon
+Solar Flare
+Sensu Beans
+
+* Transformation *
+Cell Form 2 - 
+Transform Powerlevel: 1,900,000
+Powerlevel Multiplier: 1.5
+Max Health: 140
+Max Speed: 290
+
+ATTACKS - 
+Melee
+Ki Blast
+Generic Beam
+Frieza Disk
+Gallit Gun
+Special Beam Cannon
+Solar Flare
+Sensu Beans

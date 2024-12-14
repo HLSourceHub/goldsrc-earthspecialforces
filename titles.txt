@@ -1,0 +1,643 @@
+//team menu
+
+Title_SelectYourTeam
+{	
+Choose your side
+}
+
+Team_AutoAssign
+{
+Auto Assign
+}
+
+Menu_Spectate
+{
+Spectate
+}
+//class menu
+Title_SelectYourClass
+{
+Choose your character
+}
+
+Title_CurrentlyOnYourTeam
+{
+There are %d on your team
+}
+
+None
+{
+None
+}
+
+Buu
+{
+Buu
+}
+	
+Goku
+{
+Goku
+}
+	
+Gohan
+{
+Gohan
+}
+
+Krillin
+{
+Krillin
+}
+	
+Frieza
+{
+Frieza
+}
+	
+Piccolo
+{
+Piccolo
+}
+
+Trunks
+{
+Trunks
+}
+
+Cell
+{
+Cell
+}
+
+Vegeta
+{
+Vegeta
+}
+
+Randompc
+{
+Random 
+}
+
+Title_Buu
+{
+Buu
+}
+	
+Title_Goku
+{
+Goku
+}
+	
+Title_Gohan
+{
+Gohan
+}
+
+Title_Krillin
+{
+Krillin
+}
+	
+Title_Frieza
+{
+Frieza
+}
+	
+Title_Piccolo
+{
+Piccolo
+}
+
+Title_Trunks
+{
+Trunks
+}
+
+Title_Cell
+{
+Cell
+}
+
+Title_Vegeta
+{
+Vegeta
+}
+
+Title_Randompc
+{
+Random 
+}
+
+Title_CurrentlyOnYourTeam
+{
+}
+
+// Scoreboard
+Spectators
+{
+Spectators
+}
+
+Unassigned
+{
+Unassigned
+}
+
+TEAMS
+{
+TEAMS
+}
+
+PLAYER
+{
+Player
+}
+
+PLAYERS
+{
+Players
+}
+
+CLASS
+{
+Class
+}
+
+SCORE
+{
+Frags
+}
+
+DEATHS
+{
+Deaths
+}
+
+DBALLS
+{
+Wishes
+}
+
+LATENCY
+{
+Ping
+}
+
+VOICE
+{
+Voice
+}
+
+//wish menu
+strength
+{
+Strength
+}
+
+immortality
+{
+Immortality
+}
+
+wishpoint
+{
+Friendship
+}
+
+// candy menu
+cookie
+{
+Cookie
+}
+chocolate
+{
+Chocolate
+}
+donut
+{
+Donut
+}
+
+// other menu text
+Menu_OK
+{
+OK
+}
+
+Menu_Cancel
+{
+CANCEL
+}
+
+Mic_Volume
+{
+Mic Volume
+}
+
+Speaker_Volume
+{
+Speaker Volume
+}
+
+Voice_Properties
+{
+Voice Properties
+}
+
+Map_Description_not_available
+{
+Map Description not available.
+}
+
+Player
+{
+player
+}
+
+Player_plural
+{
+players
+}
+
+Muted
+{
+You have muted %s.
+}
+
+Unmuted
+{
+You have unmuted %s.
+}
+
+No_longer_hear_that_player
+{
+You will no longer hear that player speak.
+}
+
+OBS_NONE
+{
+Camera Options
+}
+
+OBS_CHASE_LOCKED
+{
+Locked Chase-Cam
+}
+
+OBS_CHASE_FREE
+{
+Free Chase-Cam
+}
+
+OBS_ROAMING
+{
+Roaming
+}
+
+OBS_IN_EYE
+{
+First Person
+}
+
+OBS_MAP_FREE
+{
+Free Overview
+}
+
+OBS_MAP_CHASE
+{
+Chase-Cam Overview
+}
+
+SPECT_OPTIONS
+{
+Options
+}
+
+CAM_OPTIONS
+{
+Camera Options
+}
+
+Spec_Duck
+{
+Use the 'Spectator menu'-key 
+(default F11) 
+to enter Spectator menu
+}
+
+Spec_Mode1
+{
+Locked Chase-Camera
+}
+
+Spec_Mode2
+{
+Free Chase-Camera
+}
+
+Spec_Mode3
+{
+Free-Look
+}
+
+Spec_Mode4
+{
+First Person
+}
+
+Spec_Mode5
+{
+Free Map Overview
+}
+
+Spec_Mode6
+{
+Chase Map Overview
+}
+
+Spec_NoTarget
+{
+No valid targets. Cannot switch to Chase-Camera Mode.
+}
+
+Spec_Help_Title
+{
+Spectator Mode
+}
+
+Spec_Help_Text
+{
+Use the following keys to change view styles:
+
+ FIRE1 - Chase next player
+ FIRE2 - Chase previous player
+ JUMP - Change view modes
+ USE - Change inset window mode
+ 
+ F11 - Enable spectator menu
+  
+In Overview Map Mode move around with:
+
+ MOVELEFT - move left
+ MOVERIGHT - move right
+ FORWARD - zoom in
+ BACK - zoom out
+ MOUSE - rotate around map/target
+}
+
+Spec_Slow_Motion
+{
+Slow Motion
+}
+
+Spec_Replay
+{
+Instant Replay
+}
+
+Spec_Auto
+{
+Auto
+}
+
+// Multiplayer Scoreboard
+Spec_Map
+{
+Map
+}
+
+//melee text
+Hit
+{
+Hit
+}
+
+Hits
+{
+Hits
+}
+
+Combo
+{
+Combo
+}
+
+Damage
+{
+Damage
+}
+
+Dodged
+{
+Dodged
+}
+
+BlockBreak
+{
+Block Breaker!
+}
+
+SwordKill
+{
+Sword Kill!
+}
+
+Winner
+{
+You Win!
+}
+
+Loser
+{
+You Lose!
+}
+
+Tie
+{
+Tie!
+}
+
+Headon
+{
+Head-On!
+}
+
+Knockback
+{
+Power Hit!
+}
+
+Prepunch
+{
+Prepunch!
+}
+
+//credits
+Credits
+{
+Boss man:
+Andrew 'Mastasurf' Skinner
+
+2d Artists:
+Andrew 'Mastasurf' Skinner
+Chris 'Zero' Leone
+Joshua 'Vassago' Stubbles
+Thomas Joseph 'Metro-tek' Ciccarelli Jr.
+Smo 'Mr Smo' Pennington
+
+Mappers:
+Tim 'Stryker' Skinner
+Chris 'Zero' Leone
+Michael 'DJ-Ready' Reddehase
+
+Player Models:
+Eric 'SS_Vegeta' Woll
+Joshua 'Vassago' Stubbles
+Derek 'Xstortionist' Bess
+Turk
+Smo 'Mr Smo' Pennington
+
+Misc Models:
+Chris 'Zero' Leone
+Joshua 'Vassago' Stubbles
+Thomas Joseph 'Metro-tek' Cicscarelli Jr.
+
+Animators:
+Damien 'Darktooth' Demeter
+
+Crowd control:
+Phil the three-headed emu
+
+PR:
+Andrew 'Mastasurf' Skinner
+Paul 'Freedom' General
+Joseph 'pcJoe' Florencio
+
+Webmasters:
+Mike 'vt' Wilkinson
+Greg 'G-spot' Macsok
+
+Sound FX:
+Paul 'Freedom' General
+
+Music:
+Lanethan
+Bruce Falconer
+The Faulty
+Rusticate
+
+Coders:
+Herwin 'harSens' van Welbergen
+Joseph 'pcJoe' Florencio
+
+Game balancing:
+Chris 'Zero' Leone
+
+Playlisteditor:
+Peter 'Nretep' Steil
+
+Installer:
+Peter 'Nretep' Steil
+
+Linux version:
+Herwin 'harSens' van Welbergen
+Jerry 'beez0r' Thomas
+
+Linux administration:
+Herwin 'harSens' van Welbergen
+Jerry 'beez0r' Thomas
+
+Manual:
+Paul 'Freedom' General
+
+Pants stealing:
+Mike 'vt' Wilkinson
+
+Head Tester:
+Gaurav 'grOOvy' Verma
+
+Testers:
+Charles 'NightShade' Gunnells
+Rich 'Cucumba' Hernandez
+Chris 'Hibiki' Malinski
+Nikolaus 'Valkyrie Alpha' Lasnau
+Brandon 'Hsu' Dubyk
+Jeff 'Awol95' Hallinan
+Sacha 'Navanax' Noij
+Matthew 'Majin_You' Paschak
+Josh 'Magus' Rowe
+Adam 'Evil_Trunks' Coleman
+Klaas 'Prozac' Bonnema
+Rick 'Cookster' Cook
+Albert 'Halorin' Hailey
+
+Retired Head Testers:
+Arthur 'NightHawk' McCann
+Nikolaus 'Valkyrie Alpha' Lasnau
+Charles 'NightShade' Gunnells
+
+Retired Testers:
+Marc 'Ecchi_Pr0n' Hokoana
+Michael 'MSF' Fink
+Peter 'Nretep' Steil
+xCallum 'Cheeseman' Bruce
+Matt 'Deverz' Wilkinson
+Marlon 'O_o' Clay
+Anthony 'Antoine3323' Declusin
+Adam 'Gamesage2000' Birke
+Michael 'Spitfire'
+Joshua 'Pintail' Falgout
+Craig 'OFFSPRiNGCo16' Spergel
+Cliff 'Chimpbot' Foster
+Steven 'BrunO' McCutcheon
+Noah 'greentaco' Diegel
+Johnmark 'Jonka' Adair
+Anthony 'Phobius' Lipovac
+enforcer
+
+Thanks to:
+Adrian 'Fireball' LaVallee
+Blake Grant 
+rkzad
+Corvidae
+MoOg
+PsychoDude
+Gr|m
+IceBryce
+SpInNa
+Eastside
+Blobby
+Justme
+war450
+Chip
+MiKeDBZ
+Ox King
+SuperSonic
+Xenocide
+Big J
+Ansel
+Another1
+Mr. Satan
+JeS
+kotoro
+A Anema
+KilledWithStyle
+Robin Walker
+Sluggo
+Commando
+omega
+Entropy
+Laurie Cheers
+Major Goober 
+X-out
+CS-Land
+Everyone on the esf forum
+And you for reading this
+
+And remember:
+Reality is just a mass-hallucination
+caused by a lack of alcohol
+}

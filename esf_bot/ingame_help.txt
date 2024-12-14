@@ -1,0 +1,31 @@
+To open the old style bot menu press the "=" key
+If it does not work type this in console (hit the ~ key):
+
+bind "=" "bot_menu"
+
+To open up the new style menu press the "SHIFT" key
+If it does not work type this in console (hit the ~ key):
+
+bind "SHIFT" "+commandmenu"
+
+Of course you can change "=" and "SHIFT" to any key you want
+(usually a key that is unused) to launch the bot menu.
+
+Both menu's allow you to use most of the bot commands.
+
+For remaining commands check the manual which is found here:
+(half-life\esf\ESF_Bot\manual).
+
+Note for all Dedicated server owners: all console commands will work, 
+but you must type esf_bot4 before each command.
+
+
+If you have any questions that are not solved in the
+manual feel free to contact me with the following:
+
+- Mail: rick_helmus@lycos.nl or rick_helmus8@hotmail.com
+- MSN: rick_helmus8@hotmail.com
+- ICQ: 224332897
+
+Or you can check the official ESF Bot forums here:
+http://forum.esforces.com/forumdisplay.php?f=31

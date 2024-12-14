@@ -1,0 +1,218 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <title>ESFBOT history</title>
+  <meta http-equiv="Content-Type"
+ content="text/html; charset=iso-8859-1">
+</head>
+<body link="#ffcc00" alink="#ffff00" background="images/background.jpg"
+ bgcolor="#000000" text="#ff9900" vlink="#ffcc00">
+<font size=+5><b>What's New?</b></font><font size=+2><b>(+History)</b></font><br>
+
+<h3><strong> </strong></h3>
+<p><strong><br>
+<big><big><span style="font-weight: bold;">Integrated bots:<br>
+<br>
+</span><small><small>ESF 1.2.1 Bot (Current release) :<br>
+<span style="font-weight: normal;">* Bots can now use chainswoop</span><br
+ style="font-weight: normal;">
+<span style="font-weight: normal;">* Bots will now use the melee combos<br>
+* Added new console commands:</span></small></small></big></big></strong><small>
+</small>killbot, botclass, botteam, bot_meleecombo_percent,
+bot_meleekick_percent,&nbsp; &nbsp; <br>
+&nbsp;&nbsp; bot_block_percent and botsmove<br>
+* Removed the console commands follow_mode and bot_command <br>
+* Changed a few console commands: <br>
+&nbsp;&nbsp;&nbsp; + should_bots_chat is now shouldbotschat<br>
+&nbsp;&nbsp;&nbsp; + replaced botsdontshoot with botsshoot<br>
+&nbsp;&nbsp;&nbsp; + replaced botdontsearchenemies with
+botssearchenemies<br>
+* Improved commandmenu<br>
+* Fixed numbots not working in server creation menu<br>
+* Added more bot names and chat sentences<br>
+* Use the '*' as a random value when adding a bot through console<br>
+<strong><big><big><br>
+<span style="font-weight: bold;">External bots:<br>
+</span></big></big><br>
+ESF Bot 4.1:<br>
+</strong> * Fixed crashing bug when changing the botskill via the 'old
+textstyle' bot menu<br>
+* Bots should perform combos now<br>
+* Fixed small bug in the bot activator<br>
+* Added sound files needed by the superbots<br>
+<br>
+<strong>ESF Bot 4.0:<br>
+</strong><br>
+- added a lot of new commands and variables, check the <a
+ href="advanced.htm">Advanced</a> Section.<br>
+- added 'bot_help' command, try it, you might like it :-)<br>
+- bots now have unique personalities, they have the following
+attributes:<br>
+<img src="images/vr.gif" height="1" width="10">- a percentage for every
+supported attack (for example: kiblast percent).<br>
+<img src="images/vr.gif" height="1" width="10">- apercentage that a bot
+will explode a beam just before it will collide with their enemy.<br>
+<img src="images/vr.gif" height="1" width="10">- teleport percentage.<br>
+<img src="images/vr.gif" height="1" width="10">- swoop percentage.<br>
+<img src="images/vr.gif" height="1" width="10">- fly percentage.<br>
+<img src="images/vr.gif" height="1" width="10">- a percent that a bot
+will perform a combo instead of throw someone(1.2 melee stuff).<br>
+<img src="images/vr.gif" height="1" width="10">- a percent that a bot
+will kick someone while swooping(1.2 melee stuff).<br>
+<img src="images/vr.gif" height="1" width="10">- aggression levels;
+Defensive, Normal or Aggressive.<br>
+<img src="images/vr.gif" height="1" width="10">- variabele to say if
+the bot is a transkiller or not.<br>
+<img src="images/vr.gif" height="1" width="10">- all chat percentages.<br>
+- Super bot settings like starting PL and Ki gain, can be changed in
+the file &#8216;sbot.cfg&#8217;.<br>
+- Super bots can be transparent.<br>
+- Super bots will have some new weapons, like a laser to drain
+someone&#8217;s pl. :-)<br>
+- Fixed a bug for double named superbots.<br>
+- Lots of unneeded code is removed.<br>
+- Better attack choice system.<br>
+- Better danger reaction.<br>
+- Full 1.2 melee support.<br>
+- Bots can walljump.<br>
+- Improved navigation.<br>
+- Normal bots stay in team evil when a superbot is created.<br>
+- mp_plcatchup cvar will now be restored when all superbots are kicked.<br>
+- Fixed a few crashing bugs.<br>
+- Tweaked code so there should be less lag now.<br>
+- Bots can predict their enemy&#8217;s position.<br>
+- Bots will explode their beam when there&#8217;s danger.<br>
+- Frieza disc support.<br>
+- Bots will now have an aim speed(skill depended).<br>
+- New and better menu(commandmenu.txt). It will have most of the
+options of the old bot menu and ofcourse the new things.<br>
+- In the &#8216;old&#8217; menu, when creating a bot, you can now select his skill.<br>
+- min_bots and max_bots variables can be changed in listenservers as
+well.<br>
+- Dedicated servers have a menu now to.<br>
+- New command; bot_help, this will show some bot help ingame.<br>
+- Bots can now use kame torpedo&#8217;s(although its a bit experimental).<br>
+- Fixed a bug for dedicated servers where messages weren&#8217;t printed.<br>
+- Almost all console commands should work for dedicated servers as well.<br>
+- Bots can beamjump when they lost their enemy or when there is danger,
+when their beam is close(experimental).<br>
+- Bots will &#8216;remember&#8217; positions where an enemy has moved, to hunt.<br>
+- All bot files are now in an own folder.<br>
+- Bot personalities can be edited with a tool made by Nretep.<br>
+- Option to let bots balance teams.<br>
+- Removed auto pilot from the menu&#8217;s. Since they&#8217;re kinda useless: they
+can only use kiblasts now :-\<br>
+- Bots will jump when their on the ground to avoid danger.<br>
+- Bots will fall down(when possible) to avoid danger.<br>
+- Bots will use a solar flare sometimes when they are in danger.<br>
+- New config file: skill.cfg; here you can change the aim speed and
+reaction delay for each skill.<br>
+- Candy attack support<br>
+- Bots should be able to handle a MOTD now...<br>
+</p>
+<p><strong>ESF bot 3.1:<br>
+</strong><br>
+- Bots are steam compatible now.<br>
+- Added new menu style.<br>
+- Bots shouldn't melee anymore when botdontshoot is enabled.<br>
+- Bug fixed where bots stayed in a blockstruggle, even when they ran
+out of Ki.</p>
+<p><strong>ESF bot 3.0:<br>
+</strong><br>
+- Redid the menu :<br>
+<img src="images/vr.gif" height="1" width="10">- looks better :-) <br>
+<img src="images/vr.gif" height="1" width="10">- made a default and a
+random option for skill and percent selection.<br>
+<img src="images/vr.gif" height="1" width="10">- more options.<br>
+- bots can now 'see' attacks.<br>
+- better unwaypointed navagation.<br>
+- skill has more effect on the bots.<br>
+- bots use a few simple (teleport) combos.<br>
+- made the sbots.<br>
+- made the autopilot.<br>
+- made the bot_command console command, so bots can execute console
+commands.<br>
+- hopefully fixed a bug where bots powerup when they didn't need to.<br>
+- bots can beam jump at their enemy when they charge a beam and the
+enemy is close.<br>
+- bots should better react on danger while they powerup.<br>
+- bots do not only swoop straight forward, so they can surprise their
+enemy.<br>
+- bots should avoid dragonballs to avoid crashes.<br>
+- bots should avoid team members and walls by strafing.<br>
+- when there are waypoints in a map, higher skilled bots use them to
+find enemies.<br>
+- bots remember previous enemies.<br>
+- buu bots recover hp.<br>
+- bots react with retreating and random teleporting when their blinded
+by a solar flare.<br>
+- new welcome message.<br>
+- new bot names.<br>
+- new chat messages.<br>
+- bots should better react when their enemy is close.<br>
+- better reaction on attacks.<br>
+- bots recover from melee attacks now.<br>
+- bots look around once in a while when they have no enemy.<br>
+- optimized enemy selection.<br>
+- Most console commands are able for dedicated servers aswell.<br>
+- Option to enable/disable the use of destructo discs by krillin bots.</p>
+<p><strong>ESF bot 2.0:</strong></p>
+<p>- Bots can now hear<br>
+- Teleport percent added<br>
+- More menu options. <br>
+- More human: <br>
+<img src="images/vr.gif" height="1" width="10">- Bots now powerup
+'normal' not when they shouldn't do it, more realistic aiming, slower
+aiming.<br>
+- Botskill have better effect: aiming - speed and offset depends on it,
+on lower skill they don't 'hear' other<br>
+<img src="images/vr.gif" height="1" width="10">players, on better skill
+they should find the enemy who have hit the bot by a beam or such. <br>
+<img src="images/vr.gif" height="1" width="10">The longer block
+distance is dependend on the skill: how lower the skill he sooner he
+block.<br>
+- Better enemy search.<br>
+- Waypoint fix: waypoints weren't all of the times connected with an
+higher waypoint.<br>
+- Bot checks if there is a wall or such very close; if there is one the
+bot strafe away from it.<br>
+- Bot now also turn away from the the skybox(was only a wall).<br>
+- Bots don't fire beams when close to walls.<br>
+- Bots don't fire an SB when there is ceiling or the skybox close above
+them.<br>
+- with teleport or melee percent you can now select a random number.<br>
+- Better teleport: now more to the left or right and not only
+backwards, he first checks wat the best direction is.<br>
+- Follow mode.</p>
+<p><strong>Ki bot 3.1:</strong></p>
+<p>- Dragon ball mode crash fixed.<br>
+- Bug fixed when you kick a bot.</p>
+<p><strong>Ki bot 3.0:</strong></p>
+<p>- Bots can now teleport away when they think its neccesarely<br>
+- Bots uses turbo when in powerstruggle/blockstruggle<br>
+- Bots chat<br>
+- Bots can now use waypoints.<br>
+- Melee percent command added<br>
+- Bot menu<br>
+- Added one waypoint file, For the map esf_cell_day </p>
+<p><strong>Ki bot 2.0:</strong></p>
+<p>- Bots don't move any more when they shouldn't move.<br>
+- They melee is much better and more.<br>
+- They shouldn't act strange after transformation.<br>
+- Attack faster.<br>
+- Keep distance when needed (charging kame's etc.). <br>
+- Melee bug should be fixed now.<br>
+- Bot.cfg is fixed.</p>
+<p><strong>Ki bot 1.0:</strong></p>
+<p>- Play teamplay and deatmatch.<br>
+- use the scouter to find enemy's<br>
+- power up when neccesary<br>
+- transform<br>
+- power/block struggle</p>
+<strong>ESF bot alpha 1.0<br>
+</strong><br>
+- They work with esf beta 1.0 they already shoot and transform and
+stuff.<br>
+<p></p>
+</body>
+</html>

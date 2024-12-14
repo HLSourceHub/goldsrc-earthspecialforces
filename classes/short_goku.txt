@@ -1,0 +1,32 @@
+* Normal Form *
+Goku -
+Starting PowerLevel: 750,000
+Max Health: 110
+Max Speed: 216
+
+ATTACKS - 
+Melee
+Ki Blast
+Generic Beam
+Kamehameha
+Small/Spirit Bomb
+Solar Flare
+Kame Torpedos
+Sensu Beans
+
+* Transformation *
+SSJ Goku -
+Transform Powerlevel: 1,750,000
+Perfect Transform Powerlevel: 5,000,000
+Powerlevel Multiplier: 2
+Max Health: 120
+Max Speed: 280
+
+ATTACKS - 
+Melee
+Ki Blast
+Generic Beam
+Kamehameha
+Solare Flare
+Kame Torpedos
+Sensu Beans

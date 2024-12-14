@@ -1,0 +1,14 @@
+// overview description file for esf_giant_forest.bsp
+
+global 
+{
+	ZOOM		0.98
+	ORIGIN	-3.84 	-54.84	15520
+	ROTATED	0
+}
+
+layer 
+{
+	IMAGE	"overviews/esf_giant_forest.tga"
+	HEIGHT	1310
+}

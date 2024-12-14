@@ -1,0 +1,779 @@
+***Chat files for the ESF Bots***
+
+Any lines before the bot_chat, bot_taunt and bot_whine will be ignored.
+Also lines starting with # will be ignored, no matter where it is placed.
+Basic format of this file goes as follows:
+
+* = Sub-heading
+** = Heading
+*** = Title
+
+Read the following to understand how to create a 'Chat Block' and use this
+file to create or modify 'Chat Blocks' (found at very bottom).
+
+**Purpose:**
+To advance the bot's speech by not only making them say random phrases but
+also respond to another player\bot's questions\phrases.
+
+
+**Explaination:**
+In this file you can modify/add chat sentences and add/modify chat replies.
+
+*IMPORTANT*
+Remember that Advanced Chat ONLY WORKS IN THE BOT_CHAT SECTION! If used in any
+other section (bot_whine and bot_taunt) it WILL NOT WORK.
+
+**Chat Sections Explained:**
+
+bot_welcome:
+When a player joins a game, anything placed under this heading will be said by a bot.
+The percentage a bot will say a welcome message when a player joins a game is always 50%.
+
+bot_chat:
+This section contains 'normal' chat sentences. These sentences will be used randomly.
+You can also put response sentences in this section.
+
+bot_whine:
+Anything put in this section is used when a bot wants to 'whine' after they are killed.
+
+bot_taunt:
+This chat section is used for when a bot wants to 'taunt' the player they were killed by.
+
+**Key Definitions:**
+
+Chat Block:
+
+The name of all the components (Phrases, Responses, KeyTone\KeyWord\KeyWord2) as one
+group. An example of a basic 'Chat Block' is defined below:
+
+KeWord Hi, Hello
+{
+	Yo
+	Hey
+}
+
+Chat Type:
+
+The type of chat the 'Chat Block' will follow (either KeyWord, KeyWord2 or KeyTone).
+Each of these 'Chat Types' are explained below.
+
+Phrase:
+
+The word(s)\symbol(s) that follow a 'Chat Type'.  If the word(s) or symbol(s) is\are 
+said by a player or a bot ingame then another bot will respond with whatever response
+is inside the 'Chat Blocks' parameters. You can have a maximum of 6 'Phrases' per 
+'Chat Block'. You separate a 'Phrase' with a comma or a space (or both). Like so:
+
+Phrase 1, Phrase 2, Phrase 3, Phrase 4, Phrase 5, Phrase 6
+
+What one could look like:
+
+Hi, Hey, Yo, Hello, Sup, Heyo
+
+or (using only spaces)
+
+Hi Hey Yo Hello Sup Heyo
+
+or (using only comma's)
+
+Hi,Hey,Yo,Hello,Sup,Heyo
+
+Response:
+
+A 'Response' is what the bot will say when a 'Phrase' is said ingame. Remember that this doesn't
+work every time unless your 'bot_chat_percent' variable is set to 100. Usually a 'Response' will
+be related to one of the 'Phrases'. A 'Response' has a maximum of 80 characters (if you have any
+more then they will be cut off\truncated).  There can be a maximum of 100 'Responses' for each 
+'Chat Block'.  Any 'Responses' past 100 are ignored. For advanced response option see the heading:
+'Response Usage'.
+
+**Chat Block Template:**
+
+The setup of a 'Chat Block' is fairly simple. Use the definitions above to find out what each
+part means. The template is below:
+
+Chat Type Phrase
+{
+	Response
+	Response
+	Response
+}
+
+**KeyWord Usage:**
+
+When you use the 'Keyword' heading bots will reply when a 'Phrase' is used ingame using a 'Response'
+inside the 'Chat Block' (the '{' and '}' brackets). When a bot searches for a matching 'Phrase' when
+something is said ingame it divides the words up with spaces and certain characters 
+(listed here: " ,.;:[](){}-=+*-/\\<>?!@#$%%^&" any of these will be ignored or used to divide up words).
+
+Example:
+
+Ingame Speech: haha :D
+
+KeyWord haha, lol
+{
+	Whats so funny!
+	hehe
+}
+
+In this example if you or a bot say "haha nice one" another bot might say back "hehe" or
+"Whats so funny!". The bot will ignore the ":D" because it is one of the characters used to
+divide up words (so basically it sees it as nothing, just like a space).
+
+**KeyWord2 Usage:**
+
+'KeyWord2' is just like 'KeyWord'. The difference is when the bot is searching for a 'Phrase' he doesn't
+ignore special characters (" ,.;:[](){}-=+*-/\\<>?!@#$%^&\n\r\t"). Unlike 'KeyWord' the special characters
+are seen words and not dividers.  So you can now have a bot respond when a special character is used like so:
+
+Example:
+
+Ingame Speech: omg :)
+
+KeyWord2 :), :-)
+{
+	:P
+	hehe
+}
+
+In this example if you or a bot say ":)", another bot might react with ":P" or "hehe".
+
+**KeyToken Usage:**
+
+Use this if you want to a bot to respond to a single character\token. The 'KeyToken' heading
+does not divide up words. It just searches for the one character\token whenever someone says
+something. There are no character limits with this 'Chat Type' but you can't have more than
+one character per 'Phrase' (so you can't do "??" but you can do "?").
+
+Example:
+
+Ingame Speech: What was that?
+
+KeyToken ?
+{
+	What?
+	Why do you ask?
+}
+
+In this example a question mark is placed as the 'Phrase' (the '?' character). The bot will respond with 
+"What?" or "Why do you ask?" when a question mark is used ingame.
+
+**Response Overview:**
+
+If you don't use ! at the beginning of a sentence (see 'Response Options') the bot will 'humanize' the sentence.
+They can lowercase a sentence, drop random characters and swap characters. How much they will do this is
+specified by the variables 'chat_lower_percent', 'chat_drop_percent' and 'chat_swap_percent'. You can change these
+for each personality in the file 'bot_personality.cfg'. Furthermore the bot will 'humanize' any names used 
+in the sentence. They can remove clan tags (ie [ESF]L33TGuY is his name then the [ESF] is dropped and the bot will say 
+L33tGuY instead). The amount of times a bot will do this is specified in the 'chat_tag_percent' variable in the 
+bot_personality file.
+
+
+**Response Options:**
+
+If one of the following comes before a 'Response' it will give that 'Response' special functions:
+
+!  		:  	When used the bot won't modify the chat sentence, so it doesn't drop characters
+			or lowercase letters.
+UV: XXX		:	When used, you set the 'Use Value' of the sentence. Replace the XXX with a number
+			(range: 0 - 100 Default: 50), the higher the value, the more chance the bot will
+			use it over other 'Responses' in the 'Chat Block'.
+
+**Using A Player's Name:**
+
+In a 'Response' you can use %n or %r to represent a player's ingame name. When a bot says the 'Response' ingame
+it will replace %n or %r with the players name.  The rules on how to use the two functions are:
+
+The %n function can be used to hold the place of:
+
+	-The name of a bot (when used in a random sentence, only in 'bot_chat')
+	-The name of the player the bot is responding to (if Joe said "Hi" the bot could say "Hi Joe", only used in 'bot_chat')
+	-The name of a player who killed the bot (used only in the 'bot_whine' section)
+	-The name of a player who was killed by the bot (used only in the 'bot_taunt' section)
+
+The %r function can be used to hold the place of:
+	
+	-A random player's name (any section)
+
+**Credits:**
+
+Rick: Creating ESF Bots and Chat Phrases
+ShAdOw: Revising and Adding to the Explanation
+
+Be sure to use some of Rick's chat messages below to help you understand how to create 'Chat Blocks'.
+
+
+
+
+
+ANYTHING BELOW HERE IS USED INGAME!!!
+-----------------------------------------------------------------------------------------------------------------------------
+
+[bot_welcome]
+{
+	Hi
+	hey
+	lo
+	hello
+	hoi
+	howdy
+	sup
+	yo
+}
+
+[bot_chat]
+
+# Random Sentences:
+
+{
+	UV: 30 Who is the host ?? I want another map....
+	Any 1 dutch here ?
+	Iemand nederlands hier ?
+	Any clan members here ?
+	Hey %r whats ur msn ?
+	Hey %r u have ICQ/AIM/MSN ?
+	I really hate this map :'(
+	UV: 30 me likes map :)
+	UV: 20 Who is Botman?
+	UV: 20 You all should check BotsUnited
+	I should go to bed now :|
+	Hey %r where u live ?
+	Hey %r how old are u ?
+	I want to BS something!
+	How do u open your console ?
+	Whats a console anyway :S
+	Hey %r type kill in console hihi
+	Some1 know any good console commands ??
+	Is there a command to change ur pl ?
+	MSN suxx, use ICQ
+	AIM ownz all
+	Anybody want to play jumprope?
+	OMG, what's that thing ur neck!? Phew, it's just ur head. :P
+	Oh %r is so hot, and he's l33t to, i want to date him. sigh...
+	Did you know, that camels can live without water for a week
+	Did you know Blade left this project ?
+	Do you know bananas r monkyfood?
+	ph34r my l33t skillz
+	will there be 2nd or 3rd transformations
+	How do you melee?
+	Melee > beams
+	Want to PS?
+	Who is Rick?
+	me humps %r
+	Stupid bots
+	I'll start trying now
+	is %r a bot?
+	Im sure %r uses an aimbot!
+	I really hate that steam :|
+	I don't see why people hate steam
+	Anyone plays counter strike here?
+	ESF > CS
+	ESF and counter strike are my fav games
+	Anyone wants to play cs with me ?
+	Hey %r plz come at my server its called '%n'
+	So what do you think of 1.2?
+	Hows it going?
+
+	# Sentences by InternetNightmare BEGIN:
+
+	Am I playing with you're granny?
+	Hey! %r when are you going to start fighting?
+	%r I'm coming to kill you!
+	!Hey everybody! Go to http://www.esforces.com/bot/ :)
+	Can't wait for ESF 1.3...
+	UV: 60 I rule!
+	Is it %r lame or just me too good?
+	LOL!
+	Hi girls!
+	%r I love you! :)))
+	Hey look I'm so cool!
+	Is it me or can everyone see that %r is totaly LAME!
+	How do you do melee?
+	Where are the sensu beans?
+	What's that!?
+	Get ready for your death! :)
+	%r is the best player on this server!
+	Feel free to die!
+	I'm the best!!!
+
+	# Sentences by InternetNightmare End
+}
+
+
+# KeyWord Sentences:
+
+KeyWord hey, hello, howdy, hi
+{
+	UV: 10 hey
+	UV: 10 hey %n
+	UV: 10 hi
+	UV: 10 hi %n
+	UV: 10 howdy
+	UV: 10 hello
+}
+
+KeyWord hoi, hallo
+{
+	hoi
+	hoi %n
+	hallo
+	hallo %n
+}
+
+KeyWord cya, cu, bye
+{
+	later
+	cya
+	cya %n
+	cu
+	cu %n
+	bye
+	bye %n
+}
+
+KeyWord mzzl, mzl, mazzel, doeg, doei
+{
+	mazzel %n
+	mazzel
+	mzzl %n
+	mzzl
+	doei %n
+	doei
+	doeg %n
+	doeg
+	later he
+	later %n
+	mzzzzzzzzlllllllll!!!!!1!!!111!!1!
+}
+
+KeyWord transformations
+{
+	New transformations are planned for esf beta 1.3
+}
+
+KeyWord steam
+{
+	bleh steam sux0rz
+	steam is WAY better then that old WON
+	Can someone help me with steam?
+	%n don't whine about steam!
+	Finally steam supports offline play \0/
+}
+
+KeyWord CS, counter-strike, counter, strike
+{
+	I don't like the new CS version
+	Stupid shield in CS...
+	Without counter strike half-life would been as death as %r
+	I like DOD more then cs
+	ESF > CS
+	CS > ESF
+	I think ESF needs roundplaying like CS
+}
+
+KeyWord nl, nederlands, dutch
+{
+	Hoi ik ben nl :)
+	What is 'dutch' ?
+	My creator is dutch
+}
+
+KeyWord console
+{
+	UV: 10 To open your console press ~
+	UV: 10 To activate your console add -console to your esf shortcut...
+}
+
+KeyWord blade
+{
+	UV: 15 Blade is now known as Navanax...
+	UV: 15 Did you know he is retired as a team member and is now a beta tester?
+	UV: 20 Who is blade?
+}
+
+KeyWord haha, hehe, lol, lmao, rofl
+{
+	!hehe
+	!lol
+	Whats so funny :\
+	Whats so funny %n?...
+	Don't ya laff at me!
+	!:D
+	!:)
+	!:-)
+	!:P
+}
+
+KeyToken !
+{
+	UV: 10 Damn n00bs, they shout to much :-\
+	UV: 20 stfu
+	UV: 10 stfu %n
+}
+
+KeyToken ?
+{
+	Dunno
+	Why?
+	Uhm.... I don't know :|
+}
+
+KeyWord2 :D, :-D, :-), *g*, ^_^
+{
+	lol @ %n
+	hehe
+	!h3h3
+	lol
+	Whats so funny :\
+	Whats so funny %n?
+	!:D
+	!:)
+	!:-)
+	!:P
+}
+
+KeyWord botman
+{
+	Without botman I wouldn't exist :O
+	Botman rules!
+	!Botmans new site: http://hpb-bot.bots-united.com/
+}
+
+KeyWord2 :(, :'(, :-(, :*(, :'-(
+{
+	UV: 20 Poor %n :P
+	UV: 20 Cry baby cry >:)
+}
+
+KeyWord BotsUnited
+{
+	!Check their site: http://www.bots-united.com/
+	UV: 20 If you have a serious bot you might want to join at BU
+}
+
+# Responses by InternetNightmare BEGIN:
+
+keyWord InternetNightmare
+{
+	He rulez!
+	His brain is with the size of Empire State Building
+	He's really smart!
+	Ehmmmm... InternetNightmare... Yes I know him!
+}
+
+KeyWord brain
+{
+	I have brains... They're written in C++
+	Do you know someone who hasn't got brains?
+}
+
+KeyWord yes
+{
+	Are you shure
+	Why are you so positive?
+	I don't think so...
+}
+
+KeyWord2 C++
+{
+	Do you know C++?
+	Rick coded me in C++
+	C++ is very good programming language
+}
+
+KeyToken ?
+{
+	I don't know
+	Maybe...
+	Why are you asking?
+}
+
+KeyWord Rick
+{
+	Rick coded me! Rick rulez!
+	I know Rick he's a good person
+}
+
+KeyWord asshole
+{
+	You shouldn't talk like that!
+	Who are you callin' asshole?
+	If you'll say it again I'll kick you!
+}
+
+KeyWord Bots
+{
+	!Well I'm bot and my site is http://www.esforces.com/bot/
+	What would you do without bots?
+	Bots rule!
+	I'm the best bot for ESF!
+	Ech... I'm so smart!
+}
+
+KeyWord dog
+{
+	woof woof!
+	Do you have a dog?
+	Do you know a dog playing ESF?
+}
+
+KeyWord lame
+{
+	Who are you calling lame?!
+	Yap dude you're lame!
+	LAME - a perfect word for you!
+	Heh... you shouldn't call people who are playing better than you LAME...
+}
+
+KeyWord help
+{
+	baby cry...
+	Who's so lame and asking for help?
+	HELP - that's not a word for real fighters! Where's your pride!?
+}
+
+KeyWord Lithuania, LT
+{ 
+	Lithuania... Ah! That small country near the Baltic sea! yes I know it!
+	InternetNightmare is from Lithuania!
+	Labas! :)
+} 
+
+KeyWord kamehame, kamehameha, kame
+{
+	KA-ME-HA-ME-HA!
+	Kamehame is a good attack
+	Goku learned kamehame from Master Roshi
+}
+
+KeyWord What
+{
+	That!
+	I don't know
+}
+
+KeyWord lol
+{
+	UV: 30 lol
+}
+
+KeyWord FireArms
+{
+	Do you play FireArms?
+	ESF is better than FireArms!
+}
+
+KeyWord ahrrr
+{
+	ahrrr!
+	:)))
+	Why are you so mad?
+}
+
+KeyWord asd,dsa,qwe,ewq,zxc,cxz
+{
+	What's that?
+	?
+}
+
+KeyWord Earth
+{
+	Earth is a nice planet
+	Do you live on Earth?
+}
+
+KeyWord Vegeta,Goku,Gohan,Trunks,Goten
+{
+	He's a saiyan
+	What about him?
+	He's strong
+}
+
+KeyWord Cell
+{
+	That green bastard!
+}
+
+KeyWord Balls
+{
+	No balls! No balls! ;)
+	The Dragon Balls should not be overused!
+}
+
+KeyWord duck
+{
+	Kwa, kwa
+}
+
+KeyWord2 money,$,dollars,euro
+{
+	Bots aren't very rich...
+	%n pay me 100 dollars and I won't kill you
+}
+
+KeyWord Namek
+{
+	Namek was destroyed by frieza
+	What about it?
+}
+
+KeyWord bird, birds
+{
+	Do you like birds?
+	I can fly just like a bird :)
+}
+
+KeyWord pussy
+{
+	UV: 20 Who are you calling pussy?
+}
+
+# Responses by InternetNightmare END
+
+# Responses by ShAdOw START
+
+KeyWord combos, combo
+{
+	UV: 20 I know the combos!
+	Do you know the combos?
+	How many combos are there ingame?
+}
+
+KeyWord lamer, n00b, noob, newbie
+{
+	Live with it =P
+	\o/
+	I'm no n00b
+}
+
+KeyWord leave, go
+{
+	Make me!
+	im not goin anywhere
+}
+
+KeyWord 1337, leet
+{
+	^_^
+	yeah
+	i'm 1337 =D
+}
+
+KeyWord hax0r, hacker, h4xorz, haxorz
+{
+	I don't hack =P
+	lol
+	heh
+}
+
+# Responses by ShAdOw END
+
+[bot_taunt]
+{
+	muhahahahaha
+	Yay! Im starting to get better and better
+	!hehe
+	lol
+	!:)
+	!:-)
+	!:D
+	!jeeeej
+	!damn im good :D
+	gf
+	wow i hit u....
+	!^_^
+	hihihihi
+	u make my day :)
+	!>:)
+	!>:D
+	!=)
+	n00b ;)
+	sry :P
+	soz :P
+	w00t
+	Ownage :P
+	Hey %n am i that good or do you just suck ;-)
+	\0/
+	Training at 100 time earth's normal gravity sure pays off :)
+	The stronger you get the stonger you smell
+	Hahaha, gotcha!
+	Ph34r meh!
+	OMG i finally killed you \0/
+	Ok, because you r such a nooby, i will fight you with my hands on my back
+	lol n00b
+	lol %n is really a n00b
+	even %r can play better then %n :)
+	My dog can even play better then %n
+	Damn am I the only one who isn't a n00b :-)
+	Good fight! Good night!
+	lol %n you need to train a bit more dude
+	hehe %n really sucks :D
+
+	# Taunts by InternetNightmare BEGIN:
+
+	I'm the master here!
+	I rule!!!
+	I willl kill you again and again!
+	And you call your self player? I would call you pussy
+
+	# Taunts by InternetNightmare END
+}
+
+
+[bot_whine]
+{
+	........
+	%n I was busy...
+	f*ck off %n i was busy :-S
+	%n u damn cheater !!!!!!!!!!
+	/me shames for being killed each time
+	uhm help me :)
+	heh...
+	cheater :@
+	%n u f*cking asshole!
+	bah
+	bleh
+	:(
+	:|
+	:P
+	nice 1
+	ur good, but next time i beat you (i hope) :P
+	o well...
+	hmmmz
+	hey you hit me :P
+	:'(
+	grrr
+	%n, can u train me ?
+	hmm %n are you using aimbots or scipts ?
+	:S
+	wtf
+	huh
+	doh
+	O_O
+	I lagg :-(
+	wow
+	heuh :S
+	ok....
+	:o
+	aww
+	Lame :\
+	Can't we all just get along
+	Please go easy on me, i have a creppeh comp.
+	Hey %n Stop attacking me, i'm having bad ping
+	Hey %n this is my first time, i need some training. Can you help me?
+	Hit me one more time, and i will hit you with my third leg!!!
+	WTF!? I didn't even see that one coming! R u h4xing ?
+	Bleh, if you don't change the botskill, i will leave, i'm no match for you :(
+	WTF %n you damn cheater :@
+	meh
+	damn i suck :P
+	Okay %n you begin to annoy me
+
+	# Whine sentences by InternetNightmare BEGIN:
+
+	%n if you kill me again!..
+	Ah... My mouse stopped working for a second
+	Just wait for my new version!
+
+	# Whine sentences by InternetNightmare END:
+}

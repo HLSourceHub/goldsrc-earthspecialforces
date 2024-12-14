@@ -1,0 +1,14 @@
+// overview description file for esf_cell_games_night.bsp
+
+global 
+{
+	ZOOM		0.99
+	ORIGIN	0.00 	0.00	256.00
+	ROTATED	1
+}
+
+layer 
+{
+	IMAGE	"overviews/esf_cell_games_night.tga"
+	HEIGHT	-1537.00
+}

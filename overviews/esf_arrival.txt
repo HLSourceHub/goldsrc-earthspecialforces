@@ -1,0 +1,14 @@
+// overview description file for esf_arrival.bsp
+
+global 
+{
+	ZOOM		0.70
+	ORIGIN	179.69 	357.81	-2644
+	ROTATED	1
+}
+
+layer 
+{
+	IMAGE	"overviews/esf_arrival.tga"
+	HEIGHT	-2644
+}

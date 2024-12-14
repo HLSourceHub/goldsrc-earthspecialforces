@@ -1,0 +1,449 @@
+"1" "Add Random..."
+{
+	"1" "Good Bot" 	"addbot 1"
+	"2" "Evil Bot"	"addbot 2"
+	"3" "Bot"	"addbot"
+}
+"2" "Add Custom Bot"
+{
+	"1" "Good Bot..."
+	{
+		"1" "Buu"
+		{
+			"1" "Best"		"addbot 1 1 * 1"
+			"2" "Good"		"addbot 1 1 * 2"
+			"3" "Medium"		"addbot 1 1 * 3"
+			"4" "Bad"		"addbot 1 1 * 4"
+			"5" "Worst"		"addbot 1 1 * 5"
+		}
+		"2" "Goku"
+		{
+			"1" "Best"		"addbot 1 2 * 1"
+			"2" "Good"		"addbot 1 2 * 2"
+			"3" "Medium"		"addbot 1 2 * 3"
+			"4" "Bad"		"addbot 1 2 * 4"
+			"5" "Worst"		"addbot 1 2 * 5"
+		}
+		"3" "Gohan"
+		{
+			"1" "Best"		"addbot 1 3 * 1"
+			"2" "Good"		"addbot 1 3 * 2"
+			"3" "Medium"		"addbot 1 3 * 3"
+			"4" "Bad"		"addbot 1 3 * 4"
+			"5" "Worst"		"addbot 1 3 * 5"
+		}
+		"4" "Krillin"
+		{
+			"1" "Best"		"addbot 1 4 * 1"
+			"2" "Good"		"addbot 1 4 * 2"
+			"3" "Medium"		"addbot 1 4 * 3"
+			"4" "Bad"		"addbot 1 4 * 4"
+			"5" "Worst"		"addbot 1 4 * 5"
+		}
+		"5" "Freeza"
+		{
+			"1" "Best"		"addbot 1 5 * 1"
+			"2" "Good"		"addbot 1 5 * 2"
+			"3" "Medium"		"addbot 1 5 * 3"
+			"4" "Bad"		"addbot 1 5 * 4"
+			"5" "Worst"		"addbot 1 5 * 5"
+		}
+		"6" "Piccolo"
+		{
+			"1" "Best"		"addbot 1 6 * 1"
+			"2" "Good"		"addbot 1 6 * 2"
+			"3" "Medium"		"addbot 1 6 * 3"
+			"4" "Bad"		"addbot 1 6 * 4"
+			"5" "Worst"		"addbot 1 6 * 5"
+		}
+		"7" "Trunks"
+		{
+			"1" "Best"		"addbot 1 7 * 1"
+			"2" "Good"		"addbot 1 7 * 2"
+			"3" "Medium"		"addbot 1 7 * 3"
+			"4" "Bad"		"addbot 1 7 * 4"
+			"5" "Worst"		"addbot 1 7 * 5"
+		}
+		"8" "Vegeta"
+		{
+			"1" "Best"		"addbot 1 8 * 1"
+			"2" "Good"		"addbot 1 8 * 2"
+			"3" "Medium"		"addbot 1 8 * 3"
+			"4" "Bad"		"addbot 1 8 * 4"
+			"5" "Worst"		"addbot 1 8 * 5"
+		}
+		"9" "Cell"
+		{
+			"1" "Best"		"addbot 1 9 * 1"
+			"2" "Good"		"addbot 1 9 * 2"
+			"3" "Medium"		"addbot 1 9 * 3"
+			"4" "Bad"		"addbot 1 9 * 4"
+			"5" "Worst"		"addbot 1 9 * 5"
+		}
+	}
+	"2" "Evil Bot..."
+	{
+		"1" "Buu"
+		{
+			"1" "Best"		"addbot 2 1 * 1"
+			"2" "Good"		"addbot 2 1 * 2"
+			"3" "Medium"		"addbot 2 1 * 3"
+			"4" "Bad"		"addbot 2 1 * 4"
+			"5" "Worst"		"addbot 2 1 * 5"
+		}
+		"2" "Goku"
+		{
+			"1" "Best"		"addbot 2 2 * 1"
+			"2" "Good"		"addbot 2 2 * 2"
+			"3" "Medium"		"addbot 2 2 * 3"
+			"4" "Bad"		"addbot 2 2 * 4"
+			"5" "Worst"		"addbot 2 2 * 5"
+		}
+		"3" "Gohan"
+		{
+			"1" "Best"		"addbot 2 3 * 1"
+			"2" "Good"		"addbot 2 3 * 2"
+			"3" "Medium"		"addbot 2 3 * 3"
+			"4" "Bad"		"addbot 2 3 * 4"
+			"5" "Worst"		"addbot 2 3 * 5"
+		}
+		"4" "Krillin"
+		{
+			"1" "Best"		"addbot 2 4 * 1"
+			"2" "Good"		"addbot 2 4 * 2"
+			"3" "Medium"		"addbot 2 4 * 3"
+			"4" "Bad"		"addbot 2 4 * 4"
+			"5" "Worst"		"addbot 2 4 * 5"
+		}
+		"5" "Freeza"
+		{
+			"1" "Best"		"addbot 2 5 * 1"
+			"2" "Good"		"addbot 2 5 * 2"
+			"3" "Medium"		"addbot 2 5 * 3"
+			"4" "Bad"		"addbot 2 5 * 4"
+			"5" "Worst"		"addbot 2 5 * 5"
+		}
+		"6" "Piccolo"
+		{
+			"1" "Best"		"addbot 2 6 * 1"
+			"2" "Good"		"addbot 2 6 * 2"
+			"3" "Medium"		"addbot 2 6 * 3"
+			"4" "Bad"		"addbot 2 6 * 4"
+			"5" "Worst"		"addbot 2 6 * 5"
+		}
+		"7" "Trunks"
+		{
+			"1" "Best"		"addbot 2 7 * 1"
+			"2" "Good"		"addbot 2 7 * 2"
+			"3" "Medium"		"addbot 2 7 * 3"
+			"4" "Bad"		"addbot 2 7 * 4"
+			"5" "Worst"		"addbot 2 7 * 5"
+		}
+		"8" "Vegeta"
+		{
+			"1" "Best"		"addbot 2 8 * 1"
+			"2" "Good"		"addbot 2 8 * 2"
+			"3" "Medium"		"addbot 2 8 * 3"
+			"4" "Bad"		"addbot 2 8 * 4"
+			"5" "Worst"		"addbot 2 8 * 5"
+		}
+		"9" "Cell"
+		{
+			"1" "Best"		"addbot 2 9 * 1"
+			"2" "Good"		"addbot 2 9 * 2"
+			"3" "Medium"		"addbot 2 9 * 3"
+			"4" "Bad"		"addbot 2 9 * 4"
+			"5" "Worst"		"addbot 2 9 * 5"
+		}
+	}
+}
+"3" "Add Special Bot"
+{
+	"1" "Super Bot..."
+	{
+			"1" "Buu"	"addsbot 1 1"
+			"2" "Goku"	"addsbot 1 2"
+			"3" "Gohan"	"addsbot 1 3"
+			"4" "Krillin"	"addsbot 1 4"
+			"5" "Freeza"	"addsbot 1 5"
+			"6" "Piccolo"	"addsbot 1 6"
+			"7" "Trunks"	"addsbot 1 7"
+			"8" "Vegeta"	"addsbot 1 8"
+			"9" "Cell"	"addsbot 1 9"
+	}
+	"2" "Mega Bot..."
+	{
+			"1" "Buu"	"addsbot 2 1"
+			"2" "Goku"	"addsbot 2 2"
+			"3" "Gohan"	"addsbot 2 3"
+			"4" "Krillin"	"addsbot 2 4"
+			"5" "Freeza"	"addsbot 2 5"
+			"6" "Piccolo"	"addsbot 2 6"
+			"7" "Trunks"	"addsbot 2 7"
+			"8" "Vegeta"	"addsbot 2 8"
+			"9" "Cell"	"addsbot 2 9"
+	}
+	"3" "Ultimate Bot..."
+	{
+			"1" "Buu"	"addsbot 3 1"
+			"2" "Goku"	"addsbot 3 2"
+			"3" "Gohan"	"addsbot 3 3"
+			"4" "Krillin"	"addsbot 3 4"
+			"5" "Freeza"	"addsbot 3 5"
+			"6" "Piccolo"	"addsbot 3 6"
+			"7" "Trunks"	"addsbot 3 7"
+			"8" "Vegeta"	"addsbot 3 8"
+			"9" "Cell"	"addsbot 3 9"
+	}
+}
+"4" "Bots Fill..."
+{
+	"1" "Good Team"			"bot_fill full_good"
+	"2" "Half Good Team"		"bot_fill half_good"
+	"3" "Evil Team"			"bot_fill full_evil"
+	"4" "Half Evil Team"		"bot_fill half_evil"
+	"5" "Both Teams"		"bot_fill full"
+}
+"5" "Advanced Options"
+{
+	"1" "Set Bot Skill"
+	{
+		"1" "Best"		"botskill 1"
+		"2" "Good"		"botskill 2"
+		"3" "Medium"		"botskill 3"
+		"4" "Bad"		"botskill 4"
+		"5" "Worst"		"botskill 5"
+	}
+	"2" "Bot Agressiveness"
+	{
+		"1" "Defensive"		"bot_aggression_level defensive"
+		"2" "Normal"		"bot_aggression_level normal"
+		"3" "Agressive"		"bot_aggression_level aggressive"
+	}
+	"3" "Bots Balance Teams?"
+	{
+		"1" "Yes"	"bot_balanceteams 1"
+		"2" "No"	"bot_balanceteams 0"
+	}
+        "4" "Bot Modes"
+     	{
+		"1" "Search For Enemies Mode"
+		{
+			"1" "Search For Enemies On"	"botssearchenemies 1"
+			"2" "Search For Enemies Off"	"botssearchenemies 0"
+		}
+		"2" "Observer Mode"
+		{
+			"1" "Observer Mode On"		"observer 1"
+			"2" "Observer Mode Off"		"observer 0"
+		}
+        	"3" "Idle Mode"
+		{
+			"1" "Idle Bots On"	"idlebots 1"
+			"2" "Idle Bots Off"	"idlebots 0"
+		}
+		"4" "Cease Fire Mode"
+		{
+			"1" "Cease Fire On"	"botsshoot 0"
+			"2" "Cease Fire Off"	"botsshoot 1"
+		}
+		"5" "Use Disk Mode"
+		{
+			"1" "Use Discs On"	"botsusediscs 1"
+			"2" "Use Disks Off"	"botsusediscs 0"
+		}
+		"6" "Move Mode"
+		{
+			"1" "Bots Move On"	"botsmove 1"
+			"2" "Bots Move Off"	"botsmove 0"
+		}
+	}
+	"5" "Settings..."
+        {
+		"1" "Set Melee Percentage"
+		{
+			"1" "  0 %"		"bot_melee_percent 0"
+			"2" " 10 %"		"bot_melee_percent 10"
+			"3" " 25 %"		"bot_melee_percent 25"
+			"4" " 50 %"		"bot_melee_percent 50"
+			"5" " 75 %"		"bot_melee_percent 75"
+			"6" " 90 %"		"bot_melee_percent 90"
+			"7" "100 %"		"bot_melee_percent 100"
+			"9" "Random"		"bot_melee_percent -1"
+		}
+		"2" "Set Teleport Percentage"
+		{
+			"1" "  0 %"		"bot_teleport_percent 0"
+			"2" " 10 %"		"bot_teleport_percent 10"
+			"3" " 25 %"		"bot_teleport_percent 25"
+			"4" " 50 %"		"bot_teleport_percent 50"
+			"5" " 75 %"		"bot_teleport_percent 75"
+			"6" " 90 %"		"bot_teleport_percent 90"
+			"7" "100 %"		"bot_teleport_percent 100"
+			"9" "Random"		"bot_teleport_percent -1"
+		}
+		"3" "Set Swoop Percentage"
+		{
+			"1" "  0 %"		"bot_swoop_percent 0"
+			"2" " 10 %"		"bot_swoop_percent 10"
+			"3" " 25 %"		"bot_swoop_percent 25"
+			"4" " 50 %"		"bot_swoop_percent 50"
+			"5" " 75 %"		"bot_swoop_percent 75"
+			"6" " 90 %"		"bot_swoop_percent 90"
+			"7" "100 %"		"bot_swoop_percent 100"
+			"9" "Random"		"bot_swoop_percent -1"
+		}
+		"4" "Set Fly Percentage"
+		{
+			"1" "  0 %"		"bot_fly_percent 0"
+			"2" " 10 %"		"bot_fly_percent 10"
+			"3" " 25 %"		"bot_fly_percent 25"
+			"4" " 50 %"		"bot_fly_percent 50"
+			"5" " 75 %"		"bot_fly_percent 75"
+			"6" " 90 %"		"bot_fly_percent 90"
+			"7" "100 %"		"bot_fly_percent 100"
+			"9" "Random"		"bot_fly_percent -1"
+		}
+                "5" "SuperBot Laser Percentage"
+                {
+                 	"1" "  0 %"		"sbot_laser_percent 0"
+			"2" " 10 %"		"sbot_laser_percent 10"
+			"3" " 25 %"		"sbot_laser_percent 25"
+			"4" " 50 %"		"sbot_laser_percent 50"
+			"5" " 75 %"		"sbot_laser_percent 75"
+			"6" " 90 %"		"sbot_laser_percent 90"
+			"7" "100 %"		"sbot_laser_percent 100"
+			"9" "Random"		"sbot_laser_percent -1"
+                }
+		
+		"6" "Block Percentage"
+                {
+                 	"1" "  0 %"		"bot_block_percent 0"
+			"2" " 10 %"		"bot_block_percent 10"
+			"3" " 25 %"		"bot_block_percent 25"
+			"4" " 50 %"		"bot_block_percent 50"
+			"5" " 75 %"		"bot_block_percent 75"
+			"6" " 90 %"		"bot_block_percent 90"
+			"7" "100 %"		"bot_block_percent 100"
+			"9" "Random"		"bot_block_percent -1"
+                }
+		"7" "Use Combo Percentage"
+                {
+                 	"1" "  0 %"		"bot_meleecombo_percent 0"
+			"2" " 10 %"		"bot_meleecombo_percent 10"
+			"3" " 25 %"		"bot_meleecombo_percent 25"
+			"4" " 50 %"		"bot_meleecombo_percent 50"
+			"5" " 75 %"		"bot_meleecombo_percent 75"
+			"6" " 90 %"		"bot_meleecombo_percent 90"
+			"7" "100 %"		"bot_meleecombo_percent 100"
+			"9" "Random"		"bot_meleecombo_percent -1"
+                }
+		"8" "KnockBack Percentage"
+                {
+                 	"1" "  0 %"		"bot_meleekick_percent 0"
+			"2" " 10 %"		"bot_meleekick_percent 10"
+			"3" " 25 %"		"bot_meleekick_percent 25"
+			"4" " 50 %"		"bot_meleekick_percent 50"
+			"5" " 75 %"		"bot_meleekick_percent 75"
+			"6" " 90 %"		"bot_meleekick_percent 90"
+			"7" "100 %"		"bot_meleekick_percent 100"
+			"9" "Random"		"bot_meleekick_percent -1"
+                }
+	}
+}
+"6" "Chat Settings"
+{
+	"1" "Toggle Chat"
+	{
+		"1" "Toggle Chatting On"	"shouldbotschat 1"
+		"2" "Toggle Chatting Off"	"shouldbotschat 0"	
+	}
+	"2" "Set Chat Percentage"
+	{
+		"1" "  0 %"		"bot_chat_percent 0"
+		"2" " 10 %"		"bot_chat_percent 10"
+		"3" " 25 %"		"bot_chat_percent 25"
+		"4" " 50 %"		"bot_chat_percent 50"
+		"5" " 75 %"		"bot_chat_percent 75"
+		"6" " 90 %"		"bot_chat_percent 90"
+		"7" "100 %"		"bot_chat_percent 100"
+		"9" "Random"		"bot_chat_percent -1"
+	}
+	"3" "Set Whine Percentage"
+	{
+		"1" "  0 %"		"bot_whine_percent 0"
+		"2" " 10 %"		"bot_whine_percent 10"
+		"3" " 25 %"		"bot_whine_percent 25"
+		"4" " 50 %"		"bot_whine_percent 50"
+		"5" " 75 %"		"bot_whine_percent 75"
+		"6" " 90 %"		"bot_whine_percent 90"
+		"7" "100 %"		"bot_whine_percent 100"
+		"9" "Random"		"bot_whine_percent -1"
+	}
+	"4" "Set Taunt Percentage"
+	{
+		"1" "  0 %"		"bot_taunt_percent 0"
+		"2" " 10 %"		"bot_taunt_percent 10"
+		"3" " 25 %"		"bot_taunt_percent 25"
+		"4" " 50 %"		"bot_taunt_percent 50"
+		"5" " 75 %"		"bot_taunt_percent 75"
+		"6" " 90 %"		"bot_taunt_percent 90"
+		"7" "100 %"		"bot_taunt_percent 100"
+		"9" "Random"		"bot_taunt_percent -1"
+	}
+	"5" "Set Swap Percentage"
+	{
+		"1" "  0 %"		"bot_chat_swap_percent 0"
+		"2" " 10 %"		"bot_chat_swap_percent 10"
+		"3" " 25 %"		"bot_chat_swap_percent 25"
+		"4" " 50 %"		"bot_chat_swap_percent 50"
+		"5" " 75 %"		"bot_chat_swap_percent 75"
+		"6" " 90 %"		"bot_chat_swap_percent 90"
+		"7" "100 %"		"bot_chat_swap_percent 100"
+		"9" "Random"		"bot_chat_swap_percent -1"
+	}
+	"6" "Set Lower Percentage"
+	{
+		"1" "  0 %"		"bot_chat_lower_percent 0"
+		"2" " 10 %"		"bot_chat_lower_percent 10"
+		"3" " 25 %"		"bot_chat_lower_percent 25"
+		"4" " 50 %"		"bot_chat_lower_percent 50"
+		"5" " 75 %"		"bot_chat_lower_percent 75"
+		"6" " 90 %"		"bot_chat_lower_percent 90"
+		"7" "100 %"		"bot_chat_lower_percent 100"
+		"9" "Random"		"bot_chat_lower_percent -1"
+	}
+	"7" "Set Drop Percentage"
+	{
+		"1" "  0 %"		"bot_chat_drop_percent 0"
+		"2" " 10 %"		"bot_chat_drop_percent 10"
+		"3" " 25 %"		"bot_chat_drop_percent 25"
+		"4" " 50 %"		"bot_chat_drop_percent 50"
+		"5" " 75 %"		"bot_chat_drop_percent 75"
+		"6" " 90 %"		"bot_chat_drop_percent 90"
+		"7" "100 %"		"bot_chat_drop_percent 100"
+		"9" "Random"		"bot_chat_drop_percent -1"
+	}
+	"8" "Set Tag Percentage"
+	{
+		"1" "  0 %"		"bot_bot_tag_percent 0"
+		"2" " 10 %"		"bot_bot_tag_percent 10"
+		"3" " 25 %"		"bot_bot_tag_percent 25"
+		"4" " 50 %"		"bot_bot_tag_percent 50"
+		"5" " 75 %"		"bot_bot_tag_percent 75"
+		"6" " 90 %"		"bot_bot_tag_percent 90"
+		"7" "100 %"		"bot_bot_tag_percent 100"
+		"9" "Random"		"bot_bot_tag_percent -1"
+	}
+}
+"7" "Kick Last Bot" "botkicklast"
+"8" "Kick..."
+{
+	"1" "Bots On Good Team"		"botkickallgood"
+	"2" "Bots On Evil Team"		"botkickallevil"	
+	"3" "All Bots"			"botkickall"
+}
+
+"9" "Restore Personalities"		"restorebotpersonalities"
+
+"0" "Bot Help"				"bot_help"

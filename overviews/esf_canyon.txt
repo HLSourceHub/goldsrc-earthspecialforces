@@ -1,0 +1,14 @@
+// overview description file for esf_canyon.bsp
+
+global 
+{
+	ZOOM		0.99
+	ORIGIN	0.00 	0.00	1408.00
+	ROTATED	1
+}
+
+layer 
+{
+	IMAGE	"overviews/esf_canyon.tga"
+	HEIGHT	-513.00
+}

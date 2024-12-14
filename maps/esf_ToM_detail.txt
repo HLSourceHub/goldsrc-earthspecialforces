@@ -1,0 +1,2 @@
+tree                detail/bark         10.0    10.0
+zer0_drt01          detail/detail005    20.0    20.0

@@ -1,0 +1,263 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <title>ESFBOT Advanced Usage</title>
+  <meta http-equiv="Content-Type"
+ content="text/html; charset=iso-8859-1">
+</head>
+<body link="#ffcc00" alink="#ffff00" background="images/background.jpg" bgcolor="#000000" text="#ff9900" vlink="#ffcc00">
+<font size=+5><b>Advanced Usage</b></font>
+<p>This section is basicly for the people who want to run servers, or just fool around with the bot settings.<br>
+If you dont want to mess around and just play, skip this section.</p>
+<p><br>
+
+<strong>Server Commands and Variables notes</strong><br>
+- Commands or variables marked with an asterisk(*) work on dedicated servers as well. <br>
+- Commands with the argument &lt;name&gt; should contain the bots name with double quotes(") (for example "Bot")<br>
+<span style="font-style: italic;"><br>Notes for dedicated servers:</span><br style="font-style: italic;">
+- When typing a command make sure you add 'esf_bot' infront of the command.<br>
+- To make a choice in the menu, type: 'esf_bot menuchoice &lt;choicenr&gt;'<br>
+- The new command 'bot_help' is an exception, it does not require 'esf_bot' as a prefix.</p>
+<p> <strong><br>
+Commands:</strong></p>
+<p><em>bot_help*</em><br>
+displays a bit of help.<br>
+<em><br>
+addbot*</em> <br>
+will add a bot using a random class, random team(if neccesary), random
+name and the default bot skill level.<br>
+<em>addbot* &lt;team&gt;</em> <br>
+will add a bot using the specified team, random class and default skill
+level.<br>
+<em>addbot* &lt;team&gt; &lt;class&gt;</em> <br>
+will add a bot using the specified team and player class and random
+name and the default bot skill level.<br>
+<em>addbot* &lt;team&gt; &lt;class&gt; &lt;name&gt;</em> <br>
+will add a bot using the specified team, class, and and name, it will
+use the default bot skill level.<br>
+<em>addbot* &lt;team&gt; &lt;class&gt; &lt;name&gt; &lt;skill&gt;</em><br>
+will add a bot using the specified team, class, name and skill. <br>
+<em>addbot* &lt;team&gt; &lt;class&gt; &lt;name&gt; &lt;skill&gt;</em>
+&lt;personality&gt;<br>
+will add a bot using the specified team, class, name, skill and
+personality.<br>
+<br>
+<br>
+&lt;team&gt;<br>
+1, 2 or *, 1 is good, 2 is evil and * is random.<br>
+if you are playing free fight, use 1.</p>
+<p>&lt;class&gt;<br>
+the class ranges from 1-9 where <br>
+1 is buu <br>
+2 is goku <br>
+3 is gohan <br>
+4 is krillin <br>
+5 is frieza <br>
+6 is piccolo<br>
+7 is trunks <br>
+8 is vegeta <br>
+9 is cell <br>
+other is a random class<br>
+<br>
+&lt;name&gt;<br>
+The bots name. Use a * to give the bot a random name<br>
+<br>
+&lt;skill&gt;<br>
+skill ranges from 1-5 where 1 is best and 5 is worst. Use a * for a
+random skill.<br>
+</p>
+<p>&lt;personality&gt;<br>
+The number you specify for the personality resembles the number found
+in the "bot_personalities.cfg" file.<br>
+If no number is specified, a random number will be assigned to the bot.<br>
+<br>
+<br>
+<em>addsbot*</em> &lt;type&gt; &lt;class&gt; &lt;personality&gt;<br>
+this basically the same as addbot, but adds a super bot.<br>
+<br>
+&lt;type&gt;<br>
+type ranges from 1 to 3,<br>
+1 is super bot<br>
+2 is mega bot<br>
+3 is ultimate bot</p>
+<p>&lt;class&gt;<br>
+Same as with the addbot command<br>
+<br>
+&lt;personality&gt;<br>
+Same as with the addbot command<br>
+<br>
+note:<br>
+Superbots only work in team and capture the dragonball mode.<br>
+As soon as a super bot is created mp_plcatchup is set to 0, also, super
+bots automatically join team Evil, all players auto join team Good,
+normal bots stay in their teams.</p>
+<p><br>
+<em>bot_fill* &lt;command&gt;</em><br>
+fills a server that depends on &lt;command&gt;<br>
+&lt;command&gt; can be (without quotes):<br>
+"full" - fills the whole server<br>
+"half_good" - fills team good for an half<br>
+"half_evil" - fills team evil for an half<br>
+"full_good" - fills team good<br>
+"full_evil" - fills team evil<br>
+note: the filling immediatly stops if you kick a bot.<br>
+<br>
+<em>killbotinfront</em><br>
+kills the bot in front of you.<br>
+</p>
+<p> <em>restorebotpersonalities*</em><br>
+restores all current bot personalities to default as defined in the
+"bot_personalities.cfg" file.</p>
+<p><span style="font-style: italic;">botkill &lt;name&gt;<br>
+</span>Kills the bot with the name &lt;name&gt;<br>
+<br>
+<span style="font-style: italic;">botteam &lt;name&gt; &lt;team&gt;<br>
+</span>Lets the bot with the name &lt;name&gt; join team &lt;team&gt;<br>
+&lt;team&gt; can be good or evil<br>
+<br>
+<span style="font-style: italic;">botclass &lt;name&gt; &lt;class&gt;<br>
+</span>Lets the bot with the name &lt;name&gt; pick class &lt;class&gt;<br>
+&lt;class&gt; can be buu, goku, gohan, krillin, frieza, piccolo,
+trunks, vegeta or cell<br>
+<br>
+<br>
+<strong>Variables </strong><br>
+<br>
+<em>botskill* &lt;skill&gt;</em><br>
+change the default botskill level (1 to 5).<br>
+skill level 1 is the best, skill level 5 is the worst.<br>
+<br>
+<em>botshoot* &lt;value&gt;</em><br>
+changes wether the bots should shoot or not, 1 is on, 0 is off.<br>
+<br>
+<span style="font-style: italic;">botssearchenemies &lt;value&gt;<br>
+</span> changes wether the bots should sreach for an enemy or not, 1 is
+on, 0 is off.<br>
+<br>
+<em>bot_balanceteams* &lt;value&gt;</em><br>
+the bots will attempt to autobalance the teams by joining the team with
+the least players, 1 is on, 0 is off.<br>
+<br>
+<em>bot_aggression_level* &lt;value&gt;</em><br>
+sets the behaviour of the bots to 'defensive', 'normal' or 'aggressive'
+<br>
+<br>
+<em>observer* &lt;value&gt; </em><br>
+make bots ignore human players- 1 is on 0 is off<br>
+<br>
+<em>shouldbotschat* &lt;value&gt;</em><br>
+turns bot chatting on or off - 0 is off 1 is on<br>
+<br>
+<em>bot_chat_percent* &lt;value&gt;</em><br>
+sets the percent of time bot will use the "say" command to send a
+bot_chat<br>
+(checked every 30 seconds)<br>
+Allowed values are 0 - 100. The default value is 10.<br>
+<br>
+<em>bot_taunt_percent* &lt;value&gt;</em><br>
+sets the percent of time bot will use the<br>
+"say" command to send a bot_taunt message after killing another player.<br>
+<br>
+<em>bot_whine_percent* &lt;value&gt;</em><br>
+sets the percent of time bot will use the "say" command to send a
+bot_whine message after being killed.<br>
+<br>
+<em>bot_chat_tag_percent* &lt;value&gt;</em><br>
+sets the percent of time bots will remove clan tags from player names.<br>
+<br>
+<em>bot_chat_drop_percent* &lt;value&gt;</em><br>
+sets the percent of time bots will drop characters from chat messages.<br>
+The default value is 10.<br>
+<br>
+<em>bot_chat_swap_percent* &lt;value&gt;</em><br>
+sets the percent of time bots will swap characters in chat messages.<br>
+<br>
+<em>bot_chat_lower_percent* &lt;value&gt;</em><br>
+sets the percent of time bots will convert chat messages to all
+lowercase.<br>
+<br>
+<em>bot_melee_percent* &lt;value&gt;</em><br>
+Sets the percent that a bot will melee, -1 is random.<br>
+<br>
+<span style="font-style: italic;">bot_meleecombo_percent &lt;value&gt;<br>
+</span>Sets the percent that a bot will charge a combo instead of
+throwing<br>
+<br>
+<span style="font-style: italic;">bot_meleekick_percent &lt;value&gt;<br>
+</span>Sets the percent that a bot will use simple melee instead of
+advanced melee<br>
+<br>
+<span style="font-style: italic;">bot_block_percent &lt;value&gt;<br>
+</span>Sets the percent that a bot will use block when he is in danger<br>
+<br>
+<em>bot_teleport_percent* &lt;value&gt; </em><br>
+sets the percentage that the bot teleport instead of block, -1 is
+random.<br>
+<br>
+<em></em><em>botsusediscs* &lt;value&gt;</em><br>
+When on, allow the bots to use discs, 1 is on 0 is off.<br>
+<br>
+<span style="font-style: italic;">idlebots &lt;value&gt;<br>
+</span>If set the bots are completely idle. 1 is on 0 is off<br>
+<br>
+<span style="font-style: italic;">botsmove &lt;value&gt;<br>
+</span>If set the bots will move. 1 is on 0 is off<br>
+<br>
+<em></em><em>sbot_laser_percent* &lt;value&gt;</em><br>
+Sets the percentage of the sbots to use the drain lasers.<br>
+-laser types:<br>
+hp drain laser type 1:<br>
+drains hp from multiple players and slow them down.<br>
+hp drain laser type 2:<br>
+drains hp from a single player and freeze him/her.<br>
+pl drain laser:<br>
+drains pl from multiple players and slow them down. And drain an attack
+untill it lost all his energy.<br>
+<br>
+<strong><br>
+</strong> <strong> If you are running a server it is also advisable to
+look inside the bot.cfg file.</strong><br>
+</p>
+<p><br>
+<strong>2. Something new, Bot personalities</strong><br>
+Bots now have different personalities, definable inside the
+'bot_personalities.cfg' file.<br>
+It is advisable to look inside this file, as this new feature changes
+the way the bots act.<br>
+<br>
+If you change commands like 'bot_melee_percent' while running a server,
+this will change the melee percentage for all bots currently on the
+server.<br>
+To revert back to the 'bot_personalities.cfg' values use the command
+'restorebotpersonalities'.<br>
+</p>
+<p><br>
+<strong>3. Names</strong></p>
+<p>Inside the file bot_names.txt located in your ESF bot directory, you
+will find the all the names used by the bots.<br>
+You can easily modify this file by opening it by notepad or similair
+programs.<br>
+The safe maximum amount of botnames lies somewhere around a 100.<br>
+All the bot names are randomly chosen from this file.</p>
+<p><strong><br>
+4. Chat</strong></p>
+<p>Inside bot_chat.txt (also located inside your ESF bot directory) you
+will find all<br>
+the lines typed by the bots when you have chatting turned on.<br>
+This files also contains a detailed explanation on how to change or add
+lines.</p>
+<p><br>
+<strong>5. Waypoints</strong><br>
+These are not really needed in this version, except for maps like
+esf_battlearena.<br>
+If you want to use waypoints anyway, they can be found in the directory
+esf\esf_bot\waypoints\old, copy<br>
+them to esf\esf_bot\waypoints.<br>
+If you want to create your own, please refer to esf_bot_waypoint.txt,
+located inside your<br>
+esf\esf_bot\waypoints directory.<br>
+<em></em><br>
+<br>
+<a href="FAQ.htm"><strong>Continue to Frequently Asked Questions</strong></a></p>
+</body>
+</html>

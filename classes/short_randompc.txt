@@ -1,0 +1,1 @@
+Chooses a random character.

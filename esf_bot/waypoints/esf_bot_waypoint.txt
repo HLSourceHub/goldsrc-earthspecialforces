@@ -1,0 +1,230 @@
+Edited waypoint discreption file for the esf bot. Orginal by botman. 
+Keep in mind that waypoints aren't needed in most of the maps. But higher skilled
+bots will use them to search players.
+
+---------------------------------------------------------------------------------
+
+
+1. Waypoints, what are they?
+
+Waypoints are locations in the maps that the bots will use when navigating.
+They allow the bot to roam about the map without having to blindly bump into
+walls.  Waypoints can be thought of like the bread crumbs in the Hansel and
+Gretel story.  They are something marking a path to make it easier to follow.
+The waypoints are not displayed while the game is being played.  The bots
+"know" which way to go by following the path laid out by these waypoints.
+
+In order to get the bots to cover the entire map when playing the game,
+waypoints should be laid out all over the map.  Without the waypoints the
+bots will just randomly run around and will tend to stay in the same area.
+Bots with sufficiently advanced waypoint information and algorithms would be 
+able to find the shortest distance between points in the map and navigate 
+from their current position to some goal on the other side of the map.
+
+This document describes the commands needed to create or edit a waypoint
+file (to be used with the HPB bot).  When creating or editing a waypoint
+file it is best NOT to have any bots wandering around at the same time.
+Create a LAN game, and join the game then start laying out waypoints for
+a map.  Save the waypoint file, disconnect from the server, then start the
+game again, this time with the bots to see how well (or poorly) they follow
+the waypoints you have created.
+
+
+2. What do waypoints look like in the map?
+
+The waypoints are displayed using vertical lines that look like lightning or
+electric streams.  The vertical line used to draw the waypoint is the same
+height as the player.  The point in space at the center of this vertical line
+is what is actually used as the waypoint.
+
+Waypoints are stored in a file with the same name as the map file name but
+using the extension ".wpt" instead of the map file extension of ".bsp".  For
+example, the waypoint file for the map 2fort would be 2fort.wpt (it will be
+stored in the Half-Life\tfc\maps folder where the 2fort.bsp file would be).
+Waypoint files are automatically loaded when the map is loaded (if they
+exist).  If the waypoint file does not exist, you will need to create it
+using the directions contained in this document.
+
+
+3. Waypoint console commands
+
+The following Waypoint commands are available (note these ARE case sensitive):
+
+"waypoint on" - Turns on displaying of waypoints.
+"waypoint off" - Turns off displaying of all waypoints.
+
+"waypoint add" - Adds a waypoint at the current player location.
+"waypoint delete" - Deletes the waypoint nearest to the player (see below).
+
+"waypoint save" - Saves the current waypoint list to a file (see below).
+"waypoint load" - Loads the waypoint list from a waypoint file (see below).
+
+"autowaypoint" - Displays the status of the autowaypoint setting.
+"autowaypoint on" - Turns on autowaypoint setting (see below).
+"autowaypoint off" - Turns off autowaypoint setting.
+
+"pathwaypoint" - Displays the status of the pathwaypoint setting.
+"pathwaypoint on" - Turns on the pathwaypoint setting (see below).
+"pathwaypoint off" - Turns off the pathwaypoint setting.
+
+"pathwaypoint create1" - Sets the first waypoint in a manual path (see below).
+"pathwaypoint create2" - Sets the second waypoint in a manual path
+"pathwaypoint remove1" - Sets the first waypoint in removing a path.
+"pathwaypoint remove2" - Sets the second waypoint in removing a path.
+
+
+To use the waypoint commands, you will have to use the console.  You must
+start the game with the console option enabled (use "hl.exe -console" in
+the Target: line of a shortcut or use "Half-Life Console" in your SIERRA
+menu from the Windows Start button).  Use the '~' key to bring down the
+console.  Enter the console commands that you wish, then use the '~' key
+again to return to the game.
+
+You can make things easier by binding console commands to keys on the
+keyboard.  Just type "bind" followed by the key you want to bind to,
+followed by the console command.  You will have to use double quotes
+on the console command if it's more than one word.  Here's an example
+of console commands that I use when editing waypoints...
+
+bind a "waypoint add"
+bind d "waypoint delete"
+bind l "waypoint load"
+bind w "waypoint save"
+
+The 'a' key will manually add a waypoint.  The 'd' key will delete a waypoint.
+The 'l' key will load the most recently saved waypoint file (useful if you
+have added some waypoints but don't want to save them and want to go back to
+the previously save waypoint list, sort of like an "undo").  The 'w' key (for
+"write waypoints") will save the list of waypoints to the waypoint file.  I
+tried using 's' (for "save waypoints"), but I kept hitting 's' by mistake when
+I wanted to add or delete a waypoint.
+
+Using "waypoint add" will place a waypoint at the location that the player is
+currently at in a map.  Waypoints can be placed anywhere the player can go.
+Waypoints can even be placed in mid-air (as long as the player can get to
+that location). When placing a waypoint, you will hear a sound to indicate that the waypoint has
+been dropped (the sound is the same sound the crossbow bolt(in hl) makes when
+striking an wall).
+
+Using "waypoint delete" will remove the waypoint closest to the player.  The
+waypoint MUST be within 40 units from the player (about 1/2 the player height)
+in order to be removed.  You will need to stand fairly close to the waypoint
+to be able to remove it.  This prevents you from accidentally removing a
+waypoint on the other side of the room.  When removing a waypoint you will
+hear a sound indicating that the waypoint was removed (the same sound the
+tripmine makes when placed on a wall).
+
+Using "waypoint save" will save the waypoint data to the waypoint file.  The
+waypoint file will have the same name as the current map with an extension
+of ".ki_wpt".  The file will be in the same directory as the map file (in the
+maps folder).
+
+Using "waypoint load" will clear out all waypoints in the current map and
+load them from the waypoint file in the maps folder.  This is a good way
+to "undo" a bunch of waypoints that you have created but do not wish to
+save.  There is no way to "undo" a single waypoint.  You will have to use
+the "waypoint delete" command to remove waypoints one-by-one.
+
+The "autowaypoint" command allows you to automatically drop waypoints as
+you run around in a map.  To turn autowaypointing on use "autowaypoint on".
+As you run around the level waypoints will be dropped every 200 units
+automatically.  No waypoint will be dropped if another waypoint is already
+within 200 units of your current position.  So if you want to place lots
+of waypoints fairly close together you may have to manually place some of
+the waypoints using the "waypoint add" command.  Autowaypointing keeps
+track of where the last waypoint was dropped (either manually or from
+autowaypointing) and will place another waypoint when you are 200 units
+from the last waypoint.  If you don't like where autowaypointing placed
+a waypoint and want to move it a little bit, you can delete the waypoint
+using "waypoint delete", move to another location, then use "waypoint add"
+to drop a waypoint where you want.  Even after deleting the waypoint placed
+by autowaypointing, the autowaypoint code will remember that location and
+not try to place another waypoint (unless you go more than 200 units from
+the location where you deleted the autowaypoint).  Without this, you would
+delete the waypoint, move a little bit, and autowaypointing would immediately
+place another waypoint (probably where you didn't want it).
+
+When using autowaypointing, try to stay in the center of narrow hallways
+and always place a waypoint on BOTH sides of a door.  You may have to place
+some of these waypoints manually using "waypoint add" since places like
+intersections of hallways and doorway entrances and exits don't usually
+fall exactly at the location where autowaypoint would want to place a
+waypoint.
+
+The "pathwaypoint" command allows you to display what the bots would consider
+to be a valid path from one waypoint to other waypoints.  Turn pathwaypoint
+on using "pathwaypoint on" and whenever you get close to a waypoint (on your
+team), white lines will be drawn to all of the other waypoints that the bot
+would consider to be "reachable".  These "reachable" waypoints would be
+waypoints that are clearly visible from the current location.  Certain
+waypoints will be disallowed as reachable for one reason or another.  For
+example, waypoints suspended in mid-air above the bot would not be considered
+reachable since the bot couldn't jump high enough to get to them.  Also
+waypoints that are too far away from the current location would not be
+considered reachable.  You may have waypoints that are close enough to each
+other, but across a wide gap that would be too wide to jump.  If the far
+waypoint is close enough and clearly visible, it would still show as
+"reachable" since I currently don't have a method to determine if the bot
+can get to that waypoint or not.
+
+The bots will ONLY go from one waypoint to another if there is a path between
+them.  Get in the habit of turning on the pathwaypoint setting when creating
+waypoint files so that you can see the waypoint paths and will know whether
+or not a path exists between two waypoints.  Also get in the habit of checking
+that paths exist BOTH WAYS between waypoints.  Just because a path is drawn
+from point A to point B, doesn't mean that a path exists from point B to
+point A.
+
+The "pathwaypoint on" and "pathwaypoint off" allows you to turn on
+or off the adding of paths between waypoints.If you want create a path
+using the "pathwaypoint create1" and "pathwaypoint create2" commands which
+are described below.
+
+The "pathwaypoint create1" and "pathwaypoint create2" commands allow you to
+manually assign a path between 2 waypoints.  This is needed in some cases
+where the waypoints are blocked (by doorways or other objects) and you wish
+to create a path between these waypoints.  Move close to the waypoint you
+wish the path to start from and use the "pathwaypoint create1" command.  You
+will hear a sound indicating that waypoint is selected.  Now move to the
+second waypoint where you want the path to terminate.  Use the "pathwaypoint
+create2" command to end the path.  You should now see a white waypoint path
+line being draw from the start waypoint to the end waypoint.  Note that this
+is a ONE-WAY connection.  If you wish to create a path back in the other
+direction you will have to start with the second waypoint and end the path
+back at the first waypoint.
+
+The "pathwaypoint remove1" and "pathwaypoint remove2" commands are just like
+the "create1" and "create2" commands except that they remove a path from the
+starting point to the ending point.  This is necessary in some cases where
+you may have a door that opens from one side and allows you to go through
+but once the door closes you can't go back through the other way.  An example
+of this is the spawn rooms in 2fort.
+
+Sometimes you have to be a little creative when using the "create1", "create2",
+"remove1" and "remove2" commands.  When editing the waypoint paths on 2fort
+there were several times when I had to use the "remove1" command then use
+"kill" to kill myself so that I could get back into the spawn room, before
+using the "remove2" command to remove a path going back into the spawn room
+through a door that I could not get through.
+
+When adding waypoints use the pathwaypoint feature to verify that waypoints
+are actually reachable.  Sometimes you add a waypoint and it appears close
+enough and it also appears to be in plain sight, but the Half-Life engine
+doesn't indicate that the waypoint is "reachable".  The spiral stairs in
+2fort are one example where I had to continually add and delete waypoints
+until I found the exact spot where the pathwaypoint showed waypoints were
+actually reachable (be sure to check this in BOTH directions when defining
+a waypoint path).  Usually you don't have to be too careful about waypoint
+placement, but in some situations, you may have to spend more time carefully
+laying out waypoints to get them to be "reachable".
+
+Try not to place too many waypoints too close together, this just slows the
+game down and really doesn't serve any purpose.  Try placing waypoints at
+intersections in hallways and try to avoid placing waypoints too close to
+walls or ledges (the bots have some slop in how close they have to get to
+a waypoint to be considered "touching" it).  Try not to place waypoints in
+places where the bots would bump into corners of walls or other obstacles
+when trying to get from one waypoint to the next.  Remember the bots won't
+always take what you consider to be the "obvious" choice when choosing the
+next waypoint.  Try to limit the choices that they have to keep them from
+heading off in the wrong direction.

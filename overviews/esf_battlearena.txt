@@ -1,0 +1,25 @@
+
+global 
+
+{
+
+            ZOOM                        1.02
+
+            ORIGIN          0    0  1472.50
+
+            ROTATED      1
+
+}
+
+ 
+
+layer 
+
+{
+
+            IMAGE           "overviews/esf_battlearena.tga"
+
+            HEIGHT          -641
+
+}
+

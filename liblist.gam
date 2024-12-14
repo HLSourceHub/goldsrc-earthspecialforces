@@ -1,0 +1,14 @@
+//  Earth Special Forces Game Info file
+game "Earth`s Special Forces"
+url_info "http://www.esforces.com"
+url_dl "http://www.esforces.com/files.php"
+
+version "Beta 1.2.3"
+size "125002292"							
+svonly "0"
+cldll "0"
+type "multiplayer_only"
+nomodels "1"
+gamedll "dlls\hl.dll"
+//gamedll "esf_bot\esf_bot.dll"
+gamedll_linux "linuxdlls/hl_i386.so"

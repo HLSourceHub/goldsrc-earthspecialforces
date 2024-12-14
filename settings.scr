@@ -1,0 +1,215 @@
+// NOTE:  THIS FILE IS AUTOMATICALLY REGENERATED, 
+//DO NOT EDIT THIS HEADER, YOUR COMMENTS WILL BE LOST IF YOU DO
+// Multiplayer options script
+//
+// Format:
+//  Version [float]
+//  Options description followed by 
+//  Options defaults
+//
+// Option description syntax:
+//
+//  "cvar" { "Prompt" { type [ type info ] } { default } }
+//
+//  type = 
+//   BOOL   (a yes/no toggle)
+//   STRING
+//   NUMBER
+//   LIST
+//
+// type info:
+// BOOL                 no type info
+// NUMBER       min max range, use -1 -1 for no limits
+// STRING       no type info
+// LIST          delimited list of options value pairs
+//
+//
+// default depends on type
+// BOOL is "0" or "1"
+// NUMBER is "value"
+// STRING is "value"
+// LIST is "index", where index "0" is the first element of the list
+
+
+// Half-Life Server Configuration Layout Script (stores last settings chosen, too)
+// File generated:  Tue Nov 16 12:48:21 AM
+//
+//
+// Cvar	-	Setting
+
+VERSION 1.0
+
+DESCRIPTION SERVER_OPTIONS
+{
+	"hostname"
+	{
+		"Server Name"
+		{ STRING }
+		{ "Earth's Special Forces Server" }
+	}
+
+	"maxplayers"
+	{
+		"Max Players"
+		{ NUMBER 1.000000 32.000000 }
+		{ "6.000000" }
+	}
+
+	"sv_password"
+	{
+		"Password"
+		{ STRING }
+		{ "" }
+	}
+
+	"sv_lan"
+	{
+		"LAN Game"
+		{ BOOL }
+		{ "0" }
+	}
+
+	"mp_fraglimit"
+	{
+		"Frag Limit"
+		{ NUMBER 0.000000 -1.000000 }
+		{ "0.000000" }
+	}
+
+	"mp_timelimit"
+	{
+		"Time Limit (Min.)"
+		{ NUMBER 0.000000 -1.000000 }
+		{ "0.000000" }
+	}
+
+	"mp_wishlimit"
+	{
+		"Wish limit"
+		{ NUMBER 0.000000 -1.000000 }
+		{ "0.000000" }
+	}
+
+	"am_skill"
+	{
+		"Melee skill setting"
+		{
+			LIST
+			"introductory" "0"
+			"intermediate" "1"
+			"advanced" "2"
+		}
+		{ "2.000000" }
+	}
+
+	"mp_gamemode"
+	{
+		"Game mode"
+		{
+			LIST
+			"Free fighting" "0"
+			"Team mode" "1"
+			"CTDB [experimental]" "2"
+		}
+		{ "1.000000" }
+	}
+
+	"mp_spawn_invulnerable_time"
+	{
+		"Invulnerable time after spawning"
+		{ NUMBER 0.000000 -1.000000 }
+		{ "4.000000" }
+	}
+
+	"mp_characterlimit"
+	{
+		"Class limit"
+		{ NUMBER 0.000000 -1.000000 }
+		{ "0.000000" }
+	}
+
+	"mp_plcatchup"
+	{
+		"Get Powerlevel closer to the servers average on dead"
+		{ BOOL }
+		{ "1" }
+	}
+
+	"mp_multipleps"
+	{
+		"Multiple ps'ing in free fighting mode"
+		{ BOOL }
+		{ "1" }
+	}
+
+	"mp_realteams"
+	{
+		"Real good/evil teams"
+		{ BOOL }
+		{ "0" }
+	}
+
+	"mp_friendlyfire"
+	{
+		"Friendly Fire"
+		{ BOOL }
+		{ "0" }
+	}
+
+	"mp_allowspectator"
+	{
+		"Allow spectator"
+		{ BOOL }
+		{ "1" }
+	}
+
+	"mp_forcerespawn"
+	{
+		"Force Respawn"
+		{ BOOL }
+		{ "1" }
+	}
+
+	"mp_footsteps"
+	{
+		"Footsteps"
+		{ BOOL }
+		{ "1" }
+	}
+
+	"mp_lockmodels"
+	{
+		"Lock models"
+		{ BOOL }
+		{ "1" }
+	}
+
+	"sv_sendvelocity"
+	{
+		"Low ping server physics"
+		{ BOOL }
+		{ "1" }
+	}
+
+	"sv_numbots"
+	{
+		"Number of Bots"
+		{ NUMBER 0.000000 31.000000 }
+		{ "0.000000" }
+	}
+
+	"sv_botskill"
+	{
+		"Default Bot Skill"
+		{
+			LIST
+			"Best" "0"
+			"High" "1"
+			"Medium" "2"
+			"Weak" "3"
+			"Bad" "4"
+		}
+		{ "1.000000" }
+	}
+
+}

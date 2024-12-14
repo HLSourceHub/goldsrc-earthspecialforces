@@ -1,0 +1,29 @@
+* Normal Form *
+Vegeta -
+Starting PowerLevel: 700,000
+Max Health: 110
+Max Speed: 216
+
+ATTACKS - 
+Melee
+Renzoku/Ki Blast
+Generic Beam
+Gallit Gun
+Sensu Beans
+
+* Transformation *
+SSJ Vegeta -
+Transform Powerlevel: 2,000,000
+Perfect Transform Powerlevel: 5,000,000
+Powerlevel Multiplier: 2
+Max Health: 120
+Max Speed: 280
+
+ATTACKS - 
+Melee
+Ki Blast
+Generic Beam
+Gallit Gun
+Big Bang
+Final Flash
+Sensu Beans

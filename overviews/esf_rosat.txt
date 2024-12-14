@@ -1,0 +1,12 @@
+global
+{
+  ZOOM     1.05
+  ORIGIN   0 224 -1280
+  ROTATED  1
+}
+
+layer
+{
+  IMAGE "overviews/esf_rosat.tga"
+  HEIGHT -2561
+}

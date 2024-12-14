@@ -1,0 +1,5 @@
+4
+weapon_s	320 320kiblastsel	0	0	48	16
+weapon_s	640 640kiblastsel	0	0	96	32
+crosshair	640 640crosshair	0	0	32	32
+crosshair	320 320crosshair	0	0	16	16

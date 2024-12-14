@@ -1,0 +1,12 @@
+global
+{
+  ZOOM     0.95
+  ORIGIN   139.42 -563.67 1472
+  ROTATED  1
+}
+
+layer
+{
+  IMAGE "overviews/esf_city.tga"
+  HEIGHT -565
+}
